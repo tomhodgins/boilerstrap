@@ -12,13 +12,13 @@
  * Sets up the WordPress core custom header arguments and settings.
  *
  * @uses add_theme_support() to register support for 3.4 and up.
- * @uses twentytwelve_header_style() to style front-end.
- * @uses twentytwelve_admin_header_style() to style wp-admin form.
- * @uses twentytwelve_admin_header_image() to add custom markup to wp-admin form.
+ * @uses boilerstrap_header_style() to style front-end.
+ * @uses boilerstrap_admin_header_style() to style wp-admin form.
+ * @uses boilerstrap_admin_header_image() to add custom markup to wp-admin form.
  *
  * @since Twenty Twelve 1.0
  */
-function twentytwelve_custom_header_setup() {
+function boilerstrap_custom_header_setup() {
 	$args = array(
 		// Text color and image (empty to use none).
 		'default-text-color'     => '444',
@@ -37,14 +37,14 @@ function twentytwelve_custom_header_setup() {
 		'random-default'         => false,
 
 		// Callbacks for styling the header and the admin preview.
-		'wp-head-callback'       => 'twentytwelve_header_style',
-		'admin-head-callback'    => 'twentytwelve_admin_header_style',
-		'admin-preview-callback' => 'twentytwelve_admin_header_image',
+		'wp-head-callback'       => 'boilerstrap_header_style',
+		'admin-head-callback'    => 'boilerstrap_admin_header_style',
+		'admin-preview-callback' => 'boilerstrap_admin_header_image',
 	);
 
 	add_theme_support( 'custom-header', $args );
 }
-add_action( 'after_setup_theme', 'twentytwelve_custom_header_setup' );
+add_action( 'after_setup_theme', 'boilerstrap_custom_header_setup' );
 
 /**
  * Styles the header text displayed on the blog.
@@ -53,7 +53,7 @@ add_action( 'after_setup_theme', 'twentytwelve_custom_header_setup' );
  *
  * @since Twenty Twelve 1.0
  */
-function twentytwelve_header_style() {
+function boilerstrap_header_style() {
 	$text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
@@ -91,7 +91,7 @@ function twentytwelve_header_style() {
  *
  * @since Twenty Twelve 1.0
  */
-function twentytwelve_admin_header_style() {
+function boilerstrap_admin_header_style() {
 ?>
 	<style type="text/css">
 	.appearance_page_custom-header #headimg {
@@ -131,7 +131,7 @@ function twentytwelve_admin_header_style() {
  *
  * @since Twenty Twelve 1.0
  */
-function twentytwelve_admin_header_image() {
+function boilerstrap_admin_header_image() {
 	?>
 	<div id="headimg">
 		<?php

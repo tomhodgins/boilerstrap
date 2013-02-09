@@ -102,7 +102,7 @@ html {
 	-ms-text-size-adjust: 100%;
 }
 a:focus {
-	outline: thin dotted;
+	outline: none;
 }
 article,
 aside,
@@ -174,7 +174,6 @@ img {
 	display: table;
 	content: "";
 }
-
 
 /* =Repeatable patterns
 -------------------------------------------------------------- */
