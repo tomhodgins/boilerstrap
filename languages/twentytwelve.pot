@@ -159,19 +159,19 @@ msgid "Primary Menu"
 msgstr ""
 
 #. translators: If there are characters in your language that are not supported
-#. 	   by Open Sans, translate this to 'off'. Do not translate into your own
+#. 	   by Source Sans Pro, translate this to 'off'. Do not translate into your own
 #. language.
 #: functions.php:120
-msgctxt "Open Sans font: on or off"
+msgctxt "Source Sans Pro font: on or off"
 msgid "on"
 msgstr ""
 
-#. translators: To add an additional Open Sans character subset specific to
+#. translators: To add an additional Source Sans Pro character subset specific to
 #. your language, translate
 #. 		   this to 'greek', 'cyrillic' or 'vietnamese'. Do not translate into your
 #. own language.
 #: functions.php:125
-msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
+msgctxt "Source Sans Pro font: add new subset (greek, cyrillic, vietnamese)"
 msgid "no-subset"
 msgstr ""
 

@@ -117,12 +117,12 @@ function boilerstrap_scripts_styles() {
 
 	/* translators: If there are characters in your language that are not supported
 	   by Open Sans, translate this to 'off'. Do not translate into your own language. */
-	if ( 'off' !== _x( 'on', 'Open Sans font: on or off', 'boilerstrap' ) ) {
+	if ( 'off' !== _x( 'on', 'Source Sans Pro: on or off', 'boilerstrap' ) ) {
 		$subsets = 'latin,latin-ext';
 
 		/* translators: To add an additional Open Sans character subset specific to your language, translate
 		   this to 'greek', 'cyrillic' or 'vietnamese'. Do not translate into your own language. */
-		$subset = _x( 'no-subset', 'Open Sans font: add new subset (greek, cyrillic, vietnamese)', 'boilerstrap' );
+		$subset = _x( 'no-subset', 'Source Sans Pro font: add new subset (greek, cyrillic, vietnamese)', 'boilerstrap' );
 
 		if ( 'cyrillic' == $subset )
 			$subsets .= ',cyrillic,cyrillic-ext';
@@ -133,7 +133,7 @@ function boilerstrap_scripts_styles() {
 
 		$protocol = is_ssl() ? 'https' : 'http';
 		$query_args = array(
-			'family' => 'Open+Sans:400italic,700italic,400,700',
+			'family' => 'Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic',
 			'subset' => $subsets,
 		);
 		wp_enqueue_style( 'boilerstrap-fonts', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
