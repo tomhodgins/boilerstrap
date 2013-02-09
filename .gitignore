@@ -1,0 +1,7 @@
+# Boilerstrap .gitignore version 0.1
+
+# Ignore Custom CSS
+css/custom.css
+
+# Ignore Custom Page Tempalate CSS Directory
+css/styles/*
