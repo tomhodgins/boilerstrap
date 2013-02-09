@@ -233,6 +233,11 @@ input[type="color"] {
 	padding: 0;
 }
 
+#secondary input {
+	margin-bottom: 0px;
+	padding: 0.428571429rem 0.714285714rem;
+}
+
 /* Buttons */
 .menu-toggle,
 input[type="submit"],
@@ -444,6 +449,41 @@ img.wp-smiley,
 	margin: 3.428571429rem 0;
 }
 
+.navbar .nav li.current-menu-item a,
+.navbar .nav li.current-menu-item a:hover,
+.navbar .nav li.current-menu-item a:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.navbar-inverse .nav li.current-menu-item a,
+.navbar-inverse .nav li.current-menu-item a:hover,
+.navbar-inverse .nav li.current-menu-item a:focus {
+  color: #ffffff;
+  background-color: #111111;
+}
+
+.navbar .nav li.current_page_item a,
+.navbar .nav li.current-menu-item a,
+.navbar .nav li.current-menu-item a:hover,
+.navbar .nav li.current-menu-item a:focus {
+  color: #555555;
+  text-decoration: none;
+  background-color: #e5e5e5;
+  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+	-moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+	box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+}
+
+.navbar .btn,
+.navbar .btn-group {
+	margin-top: 2px !important;
+}
+
+.navbar .btn-navbar {
+	padding: 5px 8px;
+}
+
 /* Author profiles */
 .author .archive-header {
 	margin-bottom: 24px;
@@ -504,9 +544,9 @@ a:hover {
 	position: absolute !important;
 	clip: rect(1px, 1px, 1px, 1px);
 }
-.main-navigation .assistive-text:hover,
-.main-navigation .assistive-text:active,
-.main-navigation .assistive-text:focus {
+.assistive-text:hover,
+.assistive-text:active,
+.assistive-text:focus {
 	background: #fff;
 	border: 2px solid #333;
 	border-radius: 3px;
@@ -525,6 +565,7 @@ a:hover {
 .site {
 	padding: 0 24px;
 	padding: 0 1.714285714rem;
+	padding-top:40px;
 	background-color: #fff;
 }
 .site-content {
@@ -538,8 +579,8 @@ a:hover {
 
 /* Header */
 .site-header {
-	padding: 24px 0;
-	padding: 1.714285714rem 0;
+/*	padding: 24px 0;
+	padding: 1.714285714rem 0;*/
 }
 .site-header h1,
 .site-header h2 {
@@ -572,34 +613,6 @@ a:hover {
 .header-image {
 	margin-top: 24px;
 	margin-top: 1.714285714rem;
-}
-
-/* Navigation Menu */
-.main-navigation {
-	margin-top: 24px;
-	margin-top: 1.714285714rem;
-	text-align: center;
-}
-.main-navigation li {
-	margin-top: 24px;
-	margin-top: 1.714285714rem;
-	font-size: 12px;
-	font-size: 0.857142857rem;
-	line-height: 1.42857143;
-}
-.main-navigation a {
-	color: #5e5e5e;
-}
-.main-navigation a:hover {
-	color: #21759b;
-}
-.main-navigation ul.nav-menu,
-.main-navigation div.nav-menu > ul {
-	display: none;
-}
-.main-navigation ul.nav-menu.toggled-on,
-.menu-toggle {
-	display: inline-block;
 }
 
 /* Banner */
@@ -1531,4 +1544,86 @@ img#wpstats {
 		margin-left: 50px;
 		margin-left: 3.57142857rem;
 	}
+}
+
+/* Bootstrap Overrides */
+
+
+@media (max-width: 767px) {
+
+	body {
+		padding: 0px !important;
+	}
+
+	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+	}
+
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+	.container,
+	.navbar-static-top .container,
+	.navbar-fixed-top .container,
+	.navbar-fixed-bottom .container {
+		width: auto !important;
+	}
+
+}
+
+@media (min-width: 979) {
+
+	.container,
+	.navbar-static-top .container,
+	.navbar-fixed-top .container,
+	.navbar-fixed-bottom .container {
+		width: 880px !important;
+	}
+
+	.site {
+		padding-left:  40px !important;
+		padding-right: 40px !important;
+	}
+
+}
+
+@media (max-width: 979px) {
+
+	.navbar-fixed-top {
+		margin-bottom: 0px !important;
+	}
+
+	.site {
+		padding-top:0px;
+	}
+
+	.nav-collpase .nav,
+	.navbar .nav {
+		margin:15px 0 10px 0 !important;
+	}
+
+	.nav-collapse .navbar-form,
+	.nav-collapse .navbar-search {
+		float: none;
+		padding: 0px 15px !important;
+		margin: 5px 0 !important;
+	}
+
+	.navbar-search .search-query {
+		padding: 4px 3% 4px 3% !important;
+		width: 94% !important;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	.container,
+	.navbar-static-top .container,
+	.navbar-fixed-top .container,
+	.navbar-fixed-bottom .container {
+		width: 880px !important;
+	}
+
 }
