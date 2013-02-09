@@ -178,6 +178,17 @@ img {
 /* =Repeatable patterns
 -------------------------------------------------------------- */
 
+/* FontAwesome Support */
+@font-face{
+	font-family:'FontAwesome';
+	src:url('font/fontawesome/fontawesome-webfont.eot?v=3.0.1');
+	src:url('font/fontawesome/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+	url('font/fontawesome/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+	url('font/fontawesome/fontawesome-webfont.ttf?v=3.0.1') format('truetype') !important;
+	font-weight:normal;
+	font-style:normal;
+}
+
 /* Small headers */
 .archive-title,
 .page-title,
@@ -527,7 +538,6 @@ body {
 	text-rendering: optimizeLegibility;
 	color: #444;
 }
-
 a {
 	outline: none;
 	color: #21759b;

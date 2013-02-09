@@ -53,7 +53,7 @@
       <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
         <i class="icon-chevron-down"></i>
       </button>
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><i class="icon-star"></i> <?php bloginfo( 'name' ); ?></a>
       <a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'boilerstrap' ); ?>"><?php _e( 'Skip to content', 'boilerstrap' ); ?></a>
       <div class="nav-collapse collapse">
 	  	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav' ) ); ?>
