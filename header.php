@@ -56,7 +56,16 @@
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><i class="icon-star"></i> <?php bloginfo( 'name' ); ?></a>
       <a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'boilerstrap' ); ?>"><?php _e( 'Skip to content', 'boilerstrap' ); ?></a>
       <div class="nav-collapse collapse">
-	  	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav' ) ); ?>
+	  	<?php 
+	  	    wp_nav_menu( array(
+	  	        'menu'       => 'top_menu',
+	  	        'depth'      => 3,
+	  	        'container'  => false,
+	  	        'menu_class' => 'nav',
+	  	        //Process nav menu using our custom nav walker
+	  	        'walker' => new twitter_bootstrap_nav_walker())
+	  	    );
+	  	?>
 			<form method="get" id="searchform" class="navbar-search pull-right" action="<?php bloginfo('home'); ?>/">
 			<div>
 				<form class="form-search">
