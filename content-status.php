@@ -3,7 +3,7 @@
  * The template for displaying posts in the Status post format
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
+ * @subpackage Boilerstrap
  * @since Twenty Twelve 1.0
  */
 ?>

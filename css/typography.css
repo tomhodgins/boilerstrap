@@ -3,6 +3,80 @@
 /* Source Sans Pro */
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,
+.navbar .brand {
 	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Custom  Rules */
+
+.navbar .brand {
+	font-weight: 600;
+}
+
+.entry-header h1.entry-title {
+	font-weight: 700;
+}
+
+.widget-area .widget h3.widget-title  {
+    font-size:18pt;
+    color:#888;
+    margin: 0 0;
+    text-transform:uppercase;
+}
+
+/* Default Headline sizes */
+
+.entry-content h1.huge {
+    font-size: 72pt;
+    letter-spacing:-2px;
+    line-height: 100%;
+    weight:900;
+}
+
+.entry-content h1 {
+    font-size:32pt;
+    letter-spacing: -1px;
+    line-height: 100%;
+    font-weight:900;
+}
+
+h1.page-title, h1.title {
+    letter-spacing: 0px;
+}
+
+.entry-content h2 {
+    color:#555;
+    font-size:28pt;
+    letter-spacing: -0.5px;
+    line-height: 100%;
+    font-weight:700;
+}
+
+.entry-content h3 {
+    color:#666;
+    font-size:24pt;
+    line-height: 100%;
+    font-weight:600;
+}
+	
+.entry-content h4 {
+    color:#777;
+    font-size:20pt;
+    line-height: 100%;
+    font-weight: 400;
+}
+
+.entry-content h5 {
+    color:#888;
+    font-size:18pt;
+    line-height: 100%;
+    font-weight: 300;
+}
+
+.entry-content h6 {
+    color:#999;
+    font-size:14pt;
+    line-height: 100%;
+    font-weight: 200;
 }

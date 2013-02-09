@@ -5,7 +5,7 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
+ * @subpackage Boilerstrap
  * @since Twenty Twelve 1.0
  */
 

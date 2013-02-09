@@ -8,7 +8,7 @@
  * located in the functions.php file.
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
+ * @subpackage Boilerstrap
  * @since Twenty Twelve 1.0
  */
 

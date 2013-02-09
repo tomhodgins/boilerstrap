@@ -3,7 +3,7 @@
  * The template for displaying a "No posts found" message.
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
+ * @subpackage Boilerstrap
  * @since Twenty Twelve 1.0
  */
 ?>
