@@ -7,7 +7,7 @@
  *
  * @package WordPress
  * @subpackage Boilerstrap
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  */
 ?>
 	</div><!-- #main .wrapper -->

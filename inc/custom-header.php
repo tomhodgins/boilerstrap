@@ -1,11 +1,11 @@
 <?php
 /**
- * Implements an optional custom header for Twenty Twelve.
+ * Implements an optional custom header for Boilerstrap.
  * See http://codex.wordpress.org/Custom_Headers
  *
  * @package WordPress
  * @subpackage Boilerstrap
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  */
 
 /**
@@ -16,7 +16,7 @@
  * @uses boilerstrap_admin_header_style() to style wp-admin form.
  * @uses boilerstrap_admin_header_image() to add custom markup to wp-admin form.
  *
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  */
 function boilerstrap_custom_header_setup() {
 	$args = array(
@@ -51,7 +51,7 @@ add_action( 'after_setup_theme', 'boilerstrap_custom_header_setup' );
  *
  * get_header_textcolor() options: 444 is default, hide text (returns 'blank'), or any hex value.
  *
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  */
 function boilerstrap_header_style() {
 	$text_color = get_header_textcolor();
@@ -89,7 +89,7 @@ function boilerstrap_header_style() {
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  */
 function boilerstrap_admin_header_style() {
 ?>
@@ -129,7 +129,7 @@ function boilerstrap_admin_header_style() {
  * Outputs markup to be displayed on the Appearance > Header admin panel.
  * This callback overrides the default markup displayed there.
  *
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  */
 function boilerstrap_admin_header_image() {
 	?>

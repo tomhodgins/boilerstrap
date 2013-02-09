@@ -1,6 +1,6 @@
 <?php
 /**
- * Twenty Twelve functions and definitions.
+ * Boilerstrap functions and definitions.
  *
  * Sets up the theme and provides some helper functions, which are used
  * in the theme as custom template tags. Others are attached to action and
@@ -19,7 +19,7 @@
  *
  * @package WordPress
  * @subpackage Boilerstrap
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  */
 
 /**
@@ -30,7 +30,7 @@ if ( ! isset( $content_width ) )
 
 /**
  * Sets up theme defaults and registers the various WordPress features that
- * Twenty Twelve supports.
+ * Boilerstrap supports.
  *
  * @uses load_theme_textdomain() For translation/localization support.
  * @uses add_editor_style() To add a Visual Editor stylesheet.
@@ -39,14 +39,14 @@ if ( ! isset( $content_width ) )
  * @uses register_nav_menu() To add support for navigation menus.
  * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
  *
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  */
 function boilerstrap_setup() {
 	/*
-	 * Makes Twenty Twelve available for translation.
+	 * Makes Boilerstrap available for translation.
 	 *
 	 * Translations can be added to the /languages/ directory.
-	 * If you're building a theme based on Twenty Twelve, use a find and replace
+	 * If you're building a theme based on Boilerstrap, use a find and replace
 	 * to change 'boilerstrap' to the name of your theme in all the template files.
 	 */
 	load_theme_textdomain( 'boilerstrap', get_template_directory() . '/languages' );
@@ -85,7 +85,7 @@ require( get_template_directory() . '/inc/custom-header.php' );
 /**
  * Enqueues scripts and styles for front-end.
  *
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  */
 function boilerstrap_scripts_styles() {
 	global $wp_styles;
@@ -101,43 +101,6 @@ function boilerstrap_scripts_styles() {
 	 * Adds JavaScript for handling the navigation menu hide-and-show behavior.
 	 */
 	wp_enqueue_script( 'boilerstrap-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0', true );
-
-	/*
-	 * Loads our special font CSS file.
-	 *
-	 * The use of Open Sans by default is localized. For languages that use
-	 * characters not supported by the font, the font can be disabled.
-	 *
-	 * To disable in a child theme, use wp_dequeue_style()
-	 * function mytheme_dequeue_fonts() {
-	 *     wp_dequeue_style( 'boilerstrap-fonts' );
-	 * }
-	 * add_action( 'wp_enqueue_scripts', 'mytheme_dequeue_fonts', 11 );
-	 */
-
-	/* translators: If there are characters in your language that are not supported
-	   by Open Sans, translate this to 'off'. Do not translate into your own language. */
-	if ( 'off' !== _x( 'on', 'Source Sans Pro: on or off', 'boilerstrap' ) ) {
-		$subsets = 'latin,latin-ext';
-
-		/* translators: To add an additional Open Sans character subset specific to your language, translate
-		   this to 'greek', 'cyrillic' or 'vietnamese'. Do not translate into your own language. */
-		$subset = _x( 'no-subset', 'Source Sans Pro font: add new subset (greek, cyrillic, vietnamese)', 'boilerstrap' );
-
-		if ( 'cyrillic' == $subset )
-			$subsets .= ',cyrillic,cyrillic-ext';
-		elseif ( 'greek' == $subset )
-			$subsets .= ',greek,greek-ext';
-		elseif ( 'vietnamese' == $subset )
-			$subsets .= ',vietnamese';
-
-		$protocol = is_ssl() ? 'https' : 'http';
-		$query_args = array(
-			'family' => 'Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic',
-			'subset' => $subsets,
-		);
-		wp_enqueue_style( 'boilerstrap-fonts', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
-	}
 
 	/*
 	 * Loads our main stylesheet.
@@ -156,7 +119,7 @@ add_action( 'wp_enqueue_scripts', 'boilerstrap_scripts_styles' );
  * Creates a nicely formatted and more specific title element text
  * for output in head of document, based on current view.
  *
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  *
  * @param string $title Default title text for current view.
  * @param string $sep Optional separator.
@@ -187,7 +150,7 @@ add_filter( 'wp_title', 'boilerstrap_wp_title', 10, 2 );
 /**
  * Makes our wp_nav_menu() fallback -- wp_page_menu() -- show a home link.
  *
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  */
 function boilerstrap_page_menu_args( $args ) {
 	if ( ! isset( $args['show_home'] ) )
@@ -199,7 +162,7 @@ add_filter( 'wp_page_menu_args', 'boilerstrap_page_menu_args' );
 /**
  * Registers our main widget area and the front page widget areas.
  *
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  */
 function boilerstrap_widgets_init() {
 	register_sidebar( array(
@@ -238,7 +201,7 @@ if ( ! function_exists( 'boilerstrap_content_nav' ) ) :
 /**
  * Displays navigation to next/previous pages when applicable.
  *
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  */
 function boilerstrap_content_nav( $html_id ) {
 	global $wp_query;
@@ -264,7 +227,7 @@ if ( ! function_exists( 'boilerstrap_comment' ) ) :
  *
  * Used as a callback by wp_list_comments() for displaying the comments.
  *
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  */
 function boilerstrap_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
@@ -325,7 +288,7 @@ if ( ! function_exists( 'boilerstrap_entry_meta' ) ) :
  *
  * Create your own boilerstrap_entry_meta() to override in a child theme.
  *
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  */
 function boilerstrap_entry_meta() {
 	// Translators: used between list items, there is a space after the comma.
@@ -376,7 +339,7 @@ endif;
  * 4. Custom fonts enabled.
  * 5. Single or multiple authors.
  *
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  *
  * @param array Existing class values.
  * @return array Filtered class values.
@@ -415,7 +378,7 @@ add_filter( 'body_class', 'boilerstrap_body_class' );
  * Adjusts content_width value for full-width and single image attachment
  * templates, and when there are no active widgets in the sidebar.
  *
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  */
 function boilerstrap_content_width() {
 	if ( is_page_template( 'page-templates/full-width.php' ) || is_attachment() || ! is_active_sidebar( 'sidebar-1' ) ) {
@@ -428,7 +391,7 @@ add_action( 'template_redirect', 'boilerstrap_content_width' );
 /**
  * Add postMessage support for site title and description for the Theme Customizer.
  *
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  * @return void
@@ -442,7 +405,7 @@ add_action( 'customize_register', 'boilerstrap_customize_register' );
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  *
- * @since Twenty Twelve 1.0
+ * @since Boilerstrap 1.0
  */
 function boilerstrap_customize_preview_js() {
 	wp_enqueue_script( 'boilerstrap-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20120827', true );
