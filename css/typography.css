@@ -26,7 +26,15 @@ body {
 /* Custom  Rules */
 
 .navbar .brand {
-	font-weight: 600;
+	font-weight: bolder;
+}
+
+.entry-content .brand {
+	font-weight: bolder;
+}
+
+.entry-content h2 span.brand {
+	font-weight:bolder;
 }
 
 .entry-header h1.entry-title {
@@ -42,10 +50,6 @@ body {
     margin: 0 0;
     font-weight:700;
     text-transform:uppercase;
-}
-
-.entry-content .brand {
-	font-weight: 400;
 }
 
 .intro {
