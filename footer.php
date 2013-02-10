@@ -26,7 +26,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/keypress-1.0.1.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/boilerstrap.js" type="text/javascript"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.fittext.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/bigtext.js" type="text/javascript"></script>
 
 </body>
 </html>
