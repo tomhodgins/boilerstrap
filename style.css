@@ -1,9 +1,9 @@
 /*
 Theme Name: Boilerstrap
-Theme URI: http://tomhodgins.com
+Theme URI: https://github.com/tomhodgins/boilerstrap
 Author: @innovati, @The_KL
-Author URI: http://tomhodgins.com
-Description: Bootstrap theme based on the 2012 theme for WordPress.
+Author URI: http://tomhodgins.com/boilerstrap/
+Description: Theme based on the 2012 theme for WordPress integrating Bootstrap, FontAwesome, jQuery, Keypress.js, and more. Perfect for people who want a minimalist fully-responsive WordPress theme, people who want to start using Bootstrap's CSS classes and JavaScript inside WordPress, or as a time-saving starting point for building full-custom WordPress themes.
 Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -187,6 +187,31 @@ img {
 	url('font/fontawesome/fontawesome-webfont.ttf?v=3.0.1') format('truetype') !important;
 	font-weight:normal;
 	font-style:normal;
+}
+
+.center {
+	text-align: center;
+}
+
+.underline {
+	border-bottom: 1px solid;
+}
+
+.hilite {
+	font-style:normal;
+	background:#ffffaa;
+	border:1px solid #eeeebb;
+	padding:0px 5px 4px 5px;
+	margin:0px 2px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	text-shadow:#ffffff 0px 1px 1px;
+	box-shadow:inset rgba(255,255,255,0.8) 0px 1px 1px, inset rgba(255,255,255,0.5) 0px -3px 5px, rgba(0,0,0,0.1) 0px 1px 10px;
+	-webkit-transition: 0.2s ease-in-out;
+	-moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 /* Small headers */
@@ -554,8 +579,7 @@ html {
 	font-size: 87.5%;
 }
 body {
-	font-size: 14px;
-	font-size: 1rem;
+	font-size: 14pt;
 	font-family: Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
 	color: #444;
@@ -842,8 +866,6 @@ article.sticky .featured-post {
 .entry-summary p,
 .comment-content p,
 .mu_register p {
-	margin: 0 0 24px;
-	margin: 0 0 1.714285714rem;
 	line-height: 1.714285714;
 }
 .entry-content ol,
@@ -851,8 +873,6 @@ article.sticky .featured-post {
 .entry-content ul,
 .comment-content ul,
 .mu_register ul {
-	margin: 0 0 24px;
-	margin: 0 0 1.714285714rem;
 	line-height: 1.714285714;
 }
 .entry-content ul ul,
@@ -877,8 +897,8 @@ article.sticky .featured-post {
 .entry-content li,
 .comment-content li,
 .mu_register li {
-	margin: 0 0 0 36px;
-	margin: 0 0 0 2.571428571rem;
+	margin: 0 0 0 24px;
+	margin: 5px 0;
 }
 .entry-content blockquote,
 .comment-content blockquote {
