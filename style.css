@@ -586,10 +586,10 @@ a:hover {
 	margin: 1.714285714rem 0 0;
 }
 
-body .container,
-body .navbar-static-top .container,
-body .navbar-fixed-top .container,
-body .navbar-fixed-bottom .container,
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container
 #page.hfeed.site.container {
 	width: 925px;
 }
