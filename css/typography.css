@@ -30,7 +30,10 @@ body {
 }
 
 .entry-header h1.entry-title {
-	font-weight: 700;
+	font-size:28pt;
+	letter-spacing: -0.5px;
+	line-height: 100%;
+	font-weight:700;
 }
 
 .widget-area .widget h3.widget-title  {
@@ -39,6 +42,10 @@ body {
     margin: 0 0;
     font-weight:700;
     text-transform:uppercase;
+}
+
+.entry-content .brand {
+	font-weight: 600;
 }
 
 /* Default Headline sizes */
