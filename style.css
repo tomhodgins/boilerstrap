@@ -523,6 +523,11 @@ img.wp-smiley,
 	color: #FFFFFF !important;
 }
 
+.dropdown-menu > li.icon
+ > a {
+padding: 3px 20px 3px 10px;
+}
+
 .navbar .btn,
 .navbar .btn-group {
 	margin-top: 2px !important;
@@ -1385,6 +1390,10 @@ a.comment-edit-link:hover {
 
 /* =Front page template
 -------------------------------------------------------------- */
+
+.frontpage h1.entry-title {
+	display: none;
+}
 
 .entry-page-image {
 	margin-bottom: 14px;

@@ -26,7 +26,7 @@ body {
 /* Custom  Rules */
 
 .navbar .brand {
-	font-weight: bolder;
+	font-weight: 400;
 }
 
 .entry-content .brand {
@@ -64,6 +64,10 @@ body {
 body {
 	font-size: 12pt;
 	font-weight: 300;
+}
+
+a.btn {
+	font-weight: bolder;
 }
 
 /* Default Headline sizes */

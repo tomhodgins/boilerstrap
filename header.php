@@ -23,8 +23,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="viewport" content="width=device-width" />
-<meta name = "viewport" content = "width = device-width, initial-scale = 1, user-scalable = no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -33,6 +32,18 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 <?php wp_head(); ?>
+
+<!-- Open Graph Tags -->
+<meta property="og:title" content="<?php wp_title( '|', true, 'right' ); ?>" />
+<meta property="og:url" content="<?php echo esc_url( home_url( '/' ) ); ?>" />
+<meta property="og:image" content="" />
+
+<!-- Fav and touch icons -->
+<link rel="shortcut icon" href="img/ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
 
 <!-- BoilerStrap CSS Goes Here -->
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css" type="text/css" media="all" />
