@@ -9,9 +9,5 @@ $( document ).ready(function() {
 	});
 	
 	// Gesture Shortcuts (via hammer.js)
-	
-	// Start fitText
-	// for responsive width headlines just add class="fitText" to an element
-	$('.fitText').fitText
-	
+
 });
