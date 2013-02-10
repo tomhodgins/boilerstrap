@@ -65,6 +65,8 @@ body {
 ol,
 ul {
 	list-style: none;
+	padding: 0;
+	margin: 0 0 15px 25px;
 }
 blockquote,
 q {
@@ -201,7 +203,7 @@ img {
 	font-style:normal;
 	background:#ffffaa;
 	border:1px solid #eeeebb;
-	padding:0px 5px 4px 5px;
+	padding:1px 5px 4px 5px;
 	margin:0px 2px;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
@@ -756,8 +758,7 @@ footer[role="contentinfo"] a:hover {
 	clear: both;
 }
 .entry-header {
-	margin-bottom: 24px;
-	margin-bottom: 1.714285714rem;
+	margin-bottom: 15px;
 }
 .entry-header img.wp-post-image {
 	margin-bottom: 24px;

@@ -26,7 +26,7 @@ body {
 /* Custom  Rules */
 
 .navbar .brand {
-	font-weight: 400;
+	font-weight: 600;
 }
 
 .entry-header h1.entry-title {
@@ -76,7 +76,7 @@ body {
     letter-spacing: -1px;
     line-height: 100%;
     font-weight:900;
-	margin: 10px 0 0 0;
+	margin: 12px 0 6px 0;
 }
 
 h1.page-title, h1.title {
@@ -89,7 +89,7 @@ h1.page-title, h1.title {
     letter-spacing: -0.5px;
     line-height: 100%;
     font-weight:700;
-    margin: 10px 0 0 0;
+	margin: 12px 0 6px 0;
 }
 
 .entry-content h3 {
@@ -97,7 +97,7 @@ h1.page-title, h1.title {
     font-size:24pt;
     line-height: 100%;
     font-weight:600;
-    margin: 10px 0 0 0;
+	margin: 12px 0 6px 0;
 }
 	
 .entry-content h4 {
@@ -105,7 +105,7 @@ h1.page-title, h1.title {
     font-size:20pt;
     line-height: 100%;
     font-weight: 400;
-    margin: 10px 0 0 0;
+	margin: 12px 0 6px 0;
 }
 
 .entry-content h5 {
@@ -113,7 +113,7 @@ h1.page-title, h1.title {
     font-size:18pt;
     line-height: 100%;
     font-weight: 300;
-    margin: 10px 0 0 0;
+	margin: 12px 0 6px 0;
 }
 
 .entry-content h6 {
@@ -121,5 +121,5 @@ h1.page-title, h1.title {
     font-size:14pt;
     line-height: 100%;
     font-weight: 200;
-    margin: 10px 0 0 0;
+	margin: 12px 0 6px 0;
 }
