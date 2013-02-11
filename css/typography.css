@@ -37,6 +37,14 @@ body {
 	font-weight:bolder;
 }
 
+.entry-content h3.popover-title {
+	font-size: 14px;
+	padding: 8px 14px;
+	margin: 0;
+	font-weight: normal;
+	line-height: 18px;
+}
+
 .entry-header h1.entry-title {
 	font-size:28pt;
 	letter-spacing: -0.5px;
