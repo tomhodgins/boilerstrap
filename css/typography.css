@@ -50,6 +50,7 @@ body {
 	letter-spacing: -0.5px;
 	line-height: 100%;
 	font-weight:700;
+	font-style: normal;
 }
 
 .widget-area .widget h3.widget-title  {
@@ -58,6 +59,7 @@ body {
     margin: 0 0;
     font-weight:700;
     text-transform:uppercase;
+    font-style: normal;
 }
 
 .intro {
@@ -85,6 +87,7 @@ a.btn {
     letter-spacing:-2px;
     line-height: 100%;
     weight:900;
+    font-style: normal;
 }
 
 .entry-content h1 small,
@@ -100,10 +103,12 @@ a.btn {
     line-height: 100%;
     font-weight:900;
 	margin: 12px 0 6px 0;
+	font-style: normal;
 }
 
 h1.page-title, h1.title {
     letter-spacing: 0px;
+    font-style: normal;
 }
 
 .entry-content h2 {
@@ -113,6 +118,7 @@ h1.page-title, h1.title {
     line-height: 100%;
     font-weight:700;
 	margin: 12px 0 6px 0;
+	font-style: normal;
 }
 
 .entry-content h3 {
@@ -121,6 +127,7 @@ h1.page-title, h1.title {
     line-height: 100%;
     font-weight:600;
 	margin: 12px 0 6px 0;
+	font-style: normal;
 }
 	
 .entry-content h4 {
@@ -129,6 +136,7 @@ h1.page-title, h1.title {
     line-height: 100%;
     font-weight: 400;
 	margin: 12px 0 6px 0;
+	font-style: normal;
 }
 
 .entry-content h5 {
@@ -137,6 +145,7 @@ h1.page-title, h1.title {
     line-height: 100%;
     font-weight: 300;
 	margin: 12px 0 6px 0;
+	font-style: normal;
 }
 
 .entry-content h6 {
@@ -145,4 +154,5 @@ h1.page-title, h1.title {
     line-height: 100%;
     font-weight: 200;
 	margin: 12px 0 6px 0;
+	font-style: normal;
 }
