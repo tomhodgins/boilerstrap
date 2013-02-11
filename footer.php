@@ -13,8 +13,11 @@
 	</div><!-- #main .wrapper -->
 	<footer id="colophon" role="contentinfo">
 		<div class="site-info">
-			<?php do_action( 'boilerstrap_credits' ); ?>
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'boilerstrap' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'boilerstrap' ); ?>"><?php printf( __( 'Proudly powered by %s', 'boilerstrap' ), 'WordPress' ); ?></a>
+			<?php if ( is_active_sidebar( 'footer' ) ) : ?>
+				<div class="footer-sidebar" role="complementary">
+					<?php dynamic_sidebar( 'footer' ); ?>
+				</div><!-- #secondary -->
+			<?php endif; ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

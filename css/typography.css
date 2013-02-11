@@ -79,6 +79,13 @@ a.btn {
     weight:900;
 }
 
+.entry-content h1 small,
+.entry-content h2 small,
+.entry-content h3 small {
+	letter-spacing: -1px;
+}
+
+
 .entry-content h1 {
     font-size:32pt;
     letter-spacing: -1px;

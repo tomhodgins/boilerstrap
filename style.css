@@ -216,6 +216,12 @@ img {
     transition: 0.2s ease-in-out;
 }
 
+.mono {
+	font-family:"Courier New", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, Courier, monospace;
+	letter-spacing: 0;
+	font-size: 90%;
+}
+
 /* Small headers */
 .archive-title,
 .page-title,
@@ -755,6 +761,10 @@ footer[role="contentinfo"] a:hover {
 	color: #21759b;
 }
 
+.footer-sidebar p {
+	margin: 0;
+	padding: 0;
+}
 
 /* =Main content and comment content
 -------------------------------------------------------------- */

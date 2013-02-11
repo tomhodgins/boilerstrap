@@ -347,6 +347,15 @@ function boilerstrap_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+	register_sidebar( array(
+		'name' => __( 'Footer Widget Area', 'boilerstrap' ),
+		'id' => 'footer',
+		'description' => __( 'Appears at the bottom of all page templates', 'boilerstrap' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s row-fluid">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'boilerstrap_widgets_init' );
 
