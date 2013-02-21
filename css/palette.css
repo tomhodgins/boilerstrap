@@ -1,138 +1,5 @@
 /* Oxygen Color Palette ~ http://oxygen-icons.org */
 
-/*
-GIMP Palette
-Name: Oxygen 
-#
-56  37    9	wood brown6 
-87  64   30	wood brown5
-117 81   26	wood brown4
-143 107	 50	wood brown3
-179 146  93	wood brown2
-222 188 133	wood brown1
-156  15  15	brick red6
-191   3   3	brick red5
-226   8   0	brick red4
-232  87  82	brick red3
-240 134 130	brick red2
-249 204 202	brick red1
-156  15  86	raspberry pink6
-191   3  97	raspberry pink5
-226   0 113	raspberry pink4
-232  82 144	raspberry pink3
-240 130 176	raspberry pink2
-249 202 222	raspberry pink1
-106   0  86	burgundy purple6
-133   2 108	burgundy purple5
-160  39 134	burgundy purple4
-177  79 154	burgundy purple3
-193 115 176     burgundy purple2
-232 183 215     burgundy purple1
- 29   10 85     grape violet6
- 52  23 110     grape violet5
- 70  40 134     grape violet4
-100  74 155     grape violet3
-142 121 165     grape violet2
-195 180 218     grape violet1
-  0  49 110     skyblue6
-  0  67 138     skyblue5
-  0  87 174     skyblue4
- 44 114 199     skyblue3
- 97 147 207     skyblue2
-164 192 228     skyblue1
-  0  72  77     sea blue6
-  0  96 102     sea blue5
-  0 120 128     sea blue4
-  0 167 179     sea blue3
-  0 196 204     sea blue2
-168 221 224     sea blue1
-  0   88 63     emerald green6
-  0 115  77     emerald green5
-  0 153 102     emerald green4
-  0 179 119     emerald green3
-  0 204 136     emerald green2
-153 220 198     emerald green1
- 0  110  41     forest green6
- 0  137  44     forest green5
- 55 164  44     forest green4
-119 183  83     forest green3
-177 210 143     forest green2
-216 232 194     forest green1
-227 173   0     sun yellow6
-243 195   0     sun yellow5
-255 221   0     sun yellow4
-255 235  85     sun yellow3
-255 242 153     sun yellow2
-255 246 200     sun yellow1
-172  67  17     hot orange6
-207  73  19     hot orange5
-235 115  49     hot orange4
-242 155 104     hot orange3
-242 187 136     hot orange2
-255 217 176     hot orange1
- 46  52  54     aluminum gray6
- 85  87  83     aluminum gray5
-136 138 133     aluminum gray4
-186 189 182     aluminum gray3
-211 215 207     aluminum gray2
-238 238 236     aluminum gray1
- 77  38   0	brown orange6
-128  63   0	brown orange5
-191  94   0	brown orange4
-255 126   0	brown orange3
-255 191 128	brown orange2
-255 223 191	brown orange1
- 89   0   0	red6
-140   0   0	red5
-191   0   0	red4
-255   0   0	red3
-255 128 128	red2
-255 191 191	red1
-115   0  85	pink6
-163   0 123	pink5
-204   0 154	pink4
-255   0 191	pink3
-255 128 223	pink2
-255 191 240	pink1
- 44   0  89	purple6
- 64   0 128	purple5
- 90   0 179	purple4
-128   0	255	purple3
-192 128 255	purple2
-223 191 255	purple1
-  0   0 128	blue6
-  0   0 191	blue5
-  0   0 255	blue4
-  0 102 255	blue3
-128 179 255	blue2
-191 217 255	blue1
-  0  77   0	green6
-  0 140   0	green5
-  0 191   0	green4
-  0 255   0	green3
-128 255 128	green2
-191 255 191	green1
- 99 128   0	lime6
-139 179   0	lime5
-191 245   0	lime4
-229 255   0	lime3
-240 255 128	lime2
-248 255 191	lime1
-255 170   0	yellow6
-255 191   0	yellow5
-255 213   0	yellow4
-255 255   0	yellow3
-255 255 153	yellow2
-255 255 191	yellow1
- 50  50  50	gray6
- 85  85  85	gray5
-136 136 136	gray4
-187 187 187	gray3
-221 221 221	gray2
-238 238 238	gray1
-
-*/
-
 /* Wood Brown */
 .wood-brown-6 { color: #382509; }
 .wood-brown-6-bg { background-color: #382509; }
@@ -386,193 +253,193 @@ Name: Oxygen
 .aluminum-gray-1-bg { background-color: #eeeeec; }
 
 /* Brown Orange */
-.brown-orange-6 { color: #; }
-.brown-orange-6-bg { background-color: #; }
+.brown-orange-6 { color: #4d2600; }
+.brown-orange-6-bg { background-color: #4d2600; }
 
-.brown-orange-5 { color: #; }
-.brown-orange-5-bg { background-color: #; }
+.brown-orange-5 { color: #803f00; }
+.brown-orange-5-bg { background-color: #803f00; }
 
 .brown-orange,
-.brown-orange-4 { color: #; }
+.brown-orange-4 { color: #bf5e00; }
 .brown-orange-bg,
-.brown-orange-4-bg { background-color: #; }
+.brown-orange-4-bg { background-color: #bf5e00; }
 
-.brown-orange-3 { color: #;}
-.brown-orange-3-bg { background-color: #; }
+.brown-orange-3 { color: #ff7e00;}
+.brown-orange-3-bg { background-color: #ff7e00; }
 
-.brown-orange-2 { color: #; }
-.brown-orange-2-bg { background-color: #; }
+.brown-orange-2 { color: #ffbf80; }
+.brown-orange-2-bg { background-color: #ffbf80; }
 
-.brown-orange-1 { color: #; }
-.brown-orange-1-bg { background-color: #; }
+.brown-orange-1 { color: #ffdfbf; }
+.brown-orange-1-bg { background-color: #ffdfbf; }
 
 /* Red */
-.red-6 { color: #; }
-.red-6-bg { background-color: #; }
+.red-6 { color: #590000; }
+.red-6-bg { background-color: #590000; }
 
-.red-5 { color: #; }
-.red-5-bg { background-color: #; }
+.red-5 { color: #8c0000 }
+.red-5-bg { background-color: #8c0000; }
 
 .red,
-.red-4 { color: #; }
+.red-4 { color: #bf0000; }
 .red-bg,
-.red-4-bg { background-color: #; }
+.red-4-bg { background-color: #bf0000; }
 
-.red-3 { color: #;}
-.red-3-bg { background-color: #; }
+.red-3 { color: #ff0000;}
+.red-3-bg { background-color: #ff0000; }
 
-.red-2 { color: #; }
-.red-2-bg { background-color: #; }
+.red-2 { color: #ff8080; }
+.red-2-bg { background-color: #ff8080; }
 
-.red-1 { color: #; }
-.red-1-bg { background-color: #; }
+.red-1 { color: #ffbfbf; }
+.red-1-bg { background-color: #ffbfbf; }
 
 /* Pink */
-.pink-6 { color: #; }
-.pink-6-bg { background-color: #; }
+.pink-6 { color: #730055; }
+.pink-6-bg { background-color: #730055; }
 
-.pink-5 { color: #; }
-.pink-5-bg { background-color: #; }
+.pink-5 { color: #a3007b; }
+.pink-5-bg { background-color: #a3007b; }
 
 .pink,
-.pink-4 { color: #; }
+.pink-4 { color: #cc009a; }
 .pink-bg,
-.pink-4-bg { background-color: #; }
+.pink-4-bg { background-color: #cc009a; }
 
-.pink-3 { color: #;}
-.pink-3-bg { background-color: #; }
+.pink-3 { color: #ff00bf;}
+.pink-3-bg { background-color: #ff00bf; }
 
-.pink-2 { color: #; }
-.pink-2-bg { background-color: #; }
+.pink-2 { color: #ff80e9; }
+.pink-2-bg { background-color: #ff80e9; }
 
-.pink-1 { color: #; }
-.pink-1-bg { background-color: #; }
+.pink-1 { color: #ffbff0; }
+.pink-1-bg { background-color: #ffbff0; }
 
 /* Purple */
-.purple-6 { color: #; }
-.purple-6-bg { background-color: #; }
+.purple-6 { color: #2c0059; }
+.purple-6-bg { background-color: #2c0059; }
 
-.purple-5 { color: #; }
-.purple-5-bg { background-color: #; }
+.purple-5 { color: #400080; }
+.purple-5-bg { background-color: #400080; }
 
 .purple,
-.purple-4 { color: #; }
+.purple-4 { color: #5a00b3; }
 .purple-bg,
-.purple-4-bg { background-color: #; }
+.purple-4-bg { background-color: #5a00b3; }
 
-.purple-3 { color: #;}
-.purple-3-bg { background-color: #; }
+.purple-3 { color: #8000ff;}
+.purple-3-bg { background-color: #8000ff; }
 
-.purple-2 { color: #; }
-.purple-2-bg { background-color: #; }
+.purple-2 { color: #c080ff; }
+.purple-2-bg { background-color: #c080ff; }
 
-.purple-1 { color: #; }
-.purple-1-bg { background-color: #; }
+.purple-1 { color: #dfbfff; }
+.purple-1-bg { background-color: #dfbfff; }
 
 /* Blue */
-.blue-6 { color: #; }
-.blue-6-bg { background-color: #; }
+.blue-6 { color: #000080; }
+.blue-6-bg { background-color: #000080; }
 
-.blue-5 { color: #; }
-.blue-5-bg { background-color: #; }
+.blue-5 { color: #0000bf; }
+.blue-5-bg { background-color: #0000bf; }
 
 .blue,
-.blue-4 { color: #; }
+.blue-4 { color: #0000ff; }
 .blue-bg,
-.blue-4-bg { background-color: #; }
+.blue-4-bg { background-color: #0000ff; }
 
-.blue-3 { color: #;}
-.blue-3-bg { background-color: #; }
+.blue-3 { color: #0066ff;}
+.blue-3-bg { background-color: #0066ff; }
 
-.blue-2 { color: #; }
-.blue-2-bg { background-color: #; }
+.blue-2 { color: #80b3ff; }
+.blue-2-bg { background-color: #80b3ff; }
 
-.blue-1 { color: #; }
-.blue-1-bg { background-color: #; }
+.blue-1 { color: #bfd9ff; }
+.blue-1-bg { background-color: #bfd9ff; }
 
 /* Green */
-.green-6 { color: #; }
-.green-6-bg { background-color: #; }
+.green-6 { color: #004d00; }
+.green-6-bg { background-color: #004d00; }
 
-.green-5 { color: #; }
-.green-5-bg { background-color: #; }
+.green-5 { color: #008c00; }
+.green-5-bg { background-color: #008c00; }
 
 .green,
-.green-4 { color: #; }
+.green-4 { color: #00bf00; }
 .green-bg,
-.green-4-bg { background-color: #; }
+.green-4-bg { background-color: #00bf00; }
 
-.green-3 { color: #;}
-.green-3-bg { background-color: #; }
+.green-3 { color: #00ff00;}
+.green-3-bg { background-color: #00ff00; }
 
-.green-2 { color: #; }
-.green-2-bg { background-color: #; }
+.green-2 { color: #80ff80; }
+.green-2-bg { background-color: #80ff80; }
 
-.green-1 { color: #; }
-.green-1-bg { background-color: #; }
+.green-1 { color: #bfffbf; }
+.green-1-bg { background-color: #bfffbf; }
 
 /* Lime */
-.lime-6 { color: #; }
-.lime-6-bg { background-color: #; }
+.lime-6 { color: #638000; }
+.lime-6-bg { background-color: #638000; }
 
-.lime-5 { color: #; }
-.lime-5-bg { background-color: #; }
+.lime-5 { color: #8bb300; }
+.lime-5-bg { background-color: #8bb300; }
 
 .lime,
-.lime-4 { color: #; }
+.lime-4 { color: #bff500; }
 .lime-bg,
-.lime-4-bg { background-color: #; }
+.lime-4-bg { background-color: #bff500; }
 
-.lime-3 { color: #;}
-.lime-3-bg { background-color: #; }
+.lime-3 { color: #e5ff00;}
+.lime-3-bg { background-color: #e5ff00; }
 
-.lime-2 { color: #; }
-.lime-2-bg { background-color: #; }
+.lime-2 { color: #f8ff80; }
+.lime-2-bg { background-color: #f8ff80; }
 
-.lime-1 { color: #; }
-.lime-1-bg { background-color: #; }
+.lime-1 { color: #f8ffbf; }
+.lime-1-bg { background-color: #f8ffbf; }
 
 /* Yellow */
-.yellow-6 { color: #; }
-.yellow-6-bg { background-color: #; }
+.yellow-6 { color: #ffaa00; }
+.yellow-6-bg { background-color: #ffaa00; }
 
-.yellow-5 { color: #; }
-.yellow-5-bg { background-color: #; }
+.yellow-5 { color: #ffbf00; }
+.yellow-5-bg { background-color: #ffbf00; }
 
 .yellow,
-.yellow-4 { color: #; }
+.yellow-4 { color: #ffd500; }
 .yellow-bg,
-.yellow-4-bg { background-color: #; }
+.yellow-4-bg { background-color: #ffd500; }
 
-.yellow-3 { color: #;}
-.yellow-3-bg { background-color: #; }
+.yellow-3 { color: #ffff00;}
+.yellow-3-bg { background-color: #ffff00; }
 
-.yellow-2 { color: #; }
-.yellow-2-bg { background-color: #; }
+.yellow-2 { color: #ffff99; }
+.yellow-2-bg { background-color: #ffff99; }
 
-.yellow-1 { color: #; }
-.yellow-1-bg { background-color: #; }
+.yellow-1 { color: #ffffbf; }
+.yellow-1-bg { background-color: #ffffbf; }
 
 /* Gray */
-.gray-6 { color: #; }
-.gray-6-bg { background-color: #; }
+.gray-6 { color: #323232; }
+.gray-6-bg { background-color: #323232; }
 
-.gray-5 { color: #; }
-.gray-5-bg { background-color: #; }
+.gray-5 { color: #555555; }
+.gray-5-bg { background-color: #555555; }
 
 .gray,
-.gray-4 { color: #; }
+.gray-4 { color: #888888; }
 .gray-bg,
-.gray-4-bg { background-color: #; }
+.gray-4-bg { background-color: #888888; }
 
-.gray-3 { color: #;}
-.gray-3-bg { background-color: #; }
+.gray-3 { color: #bbbbbb;}
+.gray-3-bg { background-color: #bbbbbb; }
 
-.gray-2 { color: #; }
-.gray-2-bg { background-color: #; }
+.gray-2 { color: #dddddd; }
+.gray-2-bg { background-color: #dddddd; }
 
-.gray-1 { color: #; }
-.gray-1-bg { background-color: #; }
+.gray-1 { color: #eeeeee; }
+.gray-1-bg { background-color: #eeeeee; }
 
 /* Named Colors */
 
