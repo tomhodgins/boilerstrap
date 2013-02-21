@@ -140,7 +140,9 @@ Name: Oxygen
 .wood-brown-5 { color: #57401e; }
 .wood-brown-5-bg { background-color: #57401e; }
 
+.wood-brown,
 .wood-brown-4 { color: #75511a; }
+.wood-brown-bg,
 .wood-brown-4-bg { background-color: #75511a; }
 
 .wood-brown-3 { color: #8f6b32;}
@@ -159,7 +161,9 @@ Name: Oxygen
 .brick-red-5 { color: #bf0303; }
 .brick-red-5-bg { background-color: #bf0303; }
 
+.brick-red,
 .brick-red-4 { color: #e20800; }
+.brick-red-bg,
 .brick-red-4-bg { background-color: #e20800; }
 
 .brick-red-3 { color: #e85752;}
@@ -178,7 +182,9 @@ Name: Oxygen
 .raspberry-pink-5 { color: #bf0361; }
 .raspberry-pink-5-bg { background-color: #bf0361; }
 
+.raspberry-pink,
 .raspberry-pink-4 { color: #e20071; }
+.raspberry-pink-bg,
 .raspberry-pink-4-bg { background-color: #e20071; }
 
 .raspberry-pink-3 { color: #e85290;}
@@ -197,7 +203,9 @@ Name: Oxygen
 .burgundy-purple-5 { color: #85026c; }
 .burgundy-purple-5-bg { background-color: #85026c; }
 
+.burgudy-purple,
 .burgundy-purple-4 { color: #a02786; }
+.burgundy-purple-bg,
 .burgundy-purple-4-bg { background-color: #a02786; }
 
 .burgundy-purple-3 { color: #b14f9a;}
@@ -216,7 +224,9 @@ Name: Oxygen
 .grape-violet-5 { color: #34176e; }
 .grape-violet-5-bg { background-color: #34176e; }
 
+.grape-violet,
 .grape-violet-4 { color: #462886; }
+.grape-violet-bg,
 .grape-violet-4-bg { background-color: #462886; }
 
 .grape-violet-3 { color: #644a9b;}
@@ -235,7 +245,9 @@ Name: Oxygen
 .sky-blue-5 { color: #00438a; }
 .sky-blue-5-bg { background-color: #00438a; }
 
+.sky-blue,
 .sky-blue-4 { color: #0057ae; }
+.sky-blue-bg,
 .sky-blue-4-bg { background-color: #0057ae; }
 
 .sky-blue-3 { color: #2c72c7;}
@@ -254,7 +266,9 @@ Name: Oxygen
 .sea-blue-5 { color: #006066; }
 .sea-blue-5-bg { background-color: #006066; }
 
+.sea-blue,
 .sea-blue-4 { color: #007880; }
+.sea-blue-bg,
 .sea-blue-4-bg { background-color: #007880; }
 
 .sea-blue-3 { color: #00a7b3;}
@@ -273,7 +287,9 @@ Name: Oxygen
 .emerald-green-5 { color: #00734d; }
 .emerald-green-5-bg { background-color: #00734d; }
 
+.emerald-green,
 .emerald-green-4 { color: #009966; }
+.emerald-green-bg,
 .emerald-green-4-bg { background-color: #009966; }
 
 .emerald-green-3 { color: #00b377;}
@@ -292,7 +308,9 @@ Name: Oxygen
 .forest-green-5 { color: #00892c; }
 .forest-green-5-bg { background-color: #00892c; }
 
+.forest-green,
 .forest-green-4 { color: #37a42c; }
+.forest-green-bg,
 .forest-green-4-bg { background-color: #37a42c; }
 
 .forest-green-3 { color: #77b753;}
@@ -311,7 +329,9 @@ Name: Oxygen
 .sun-yellow-5 { color: #f3c300; }
 .sun-yellow-5-bg { background-color: #f3c300; }
 
+.sun-yellow,
 .sun-yellow-4 { color: #ffdd00; }
+.sun-yellow-bg,
 .sun-yellow-4-bg { background-color: #ffdd00; }
 
 .sun-yellow-3 { color: #ffeb55;}
@@ -330,7 +350,9 @@ Name: Oxygen
 .hot-orange-5 { color: #cf4913; }
 .hot-orange-5-bg { background-color: #cf4913; }
 
+.hot-orange,
 .hot-orange-4 { color: #eb7331; }
+.hot-orange-bg,
 .hot-orange-4-bg { background-color: #eb7331; }
 
 .hot-orange-3 { color: #f29b68;}
@@ -349,7 +371,9 @@ Name: Oxygen
 .aluminum-gray-5 { color: #555753; }
 .aluminum-gray-5-bg { background-color: #555753; }
 
+.aluminum-gray,
 .aluminum-gray-4 { color: #888a85; }
+.aluminum-gray-bg,
 .aluminum-gray-4-bg { background-color: #888a85; }
 
 .aluminum-gray-3 { color: #babdb6;}
@@ -368,7 +392,9 @@ Name: Oxygen
 .brown-orange-5 { color: #; }
 .brown-orange-5-bg { background-color: #; }
 
+.brown-orange,
 .brown-orange-4 { color: #; }
+.brown-orange-bg,
 .brown-orange-4-bg { background-color: #; }
 
 .brown-orange-3 { color: #;}
@@ -387,7 +413,9 @@ Name: Oxygen
 .red-5 { color: #; }
 .red-5-bg { background-color: #; }
 
+.red,
 .red-4 { color: #; }
+.red-bg,
 .red-4-bg { background-color: #; }
 
 .red-3 { color: #;}
@@ -406,7 +434,9 @@ Name: Oxygen
 .pink-5 { color: #; }
 .pink-5-bg { background-color: #; }
 
+.pink,
 .pink-4 { color: #; }
+.pink-bg,
 .pink-4-bg { background-color: #; }
 
 .pink-3 { color: #;}
@@ -425,7 +455,9 @@ Name: Oxygen
 .purple-5 { color: #; }
 .purple-5-bg { background-color: #; }
 
+.purple,
 .purple-4 { color: #; }
+.purple-bg,
 .purple-4-bg { background-color: #; }
 
 .purple-3 { color: #;}
@@ -444,7 +476,9 @@ Name: Oxygen
 .blue-5 { color: #; }
 .blue-5-bg { background-color: #; }
 
+.blue,
 .blue-4 { color: #; }
+.blue-bg,
 .blue-4-bg { background-color: #; }
 
 .blue-3 { color: #;}
@@ -463,7 +497,9 @@ Name: Oxygen
 .green-5 { color: #; }
 .green-5-bg { background-color: #; }
 
+.green,
 .green-4 { color: #; }
+.green-bg,
 .green-4-bg { background-color: #; }
 
 .green-3 { color: #;}
@@ -482,7 +518,9 @@ Name: Oxygen
 .lime-5 { color: #; }
 .lime-5-bg { background-color: #; }
 
+.lime,
 .lime-4 { color: #; }
+.lime-bg,
 .lime-4-bg { background-color: #; }
 
 .lime-3 { color: #;}
@@ -501,7 +539,9 @@ Name: Oxygen
 .yellow-5 { color: #; }
 .yellow-5-bg { background-color: #; }
 
+.yellow,
 .yellow-4 { color: #; }
+.yellow-bg,
 .yellow-4-bg { background-color: #; }
 
 .yellow-3 { color: #;}
@@ -520,7 +560,9 @@ Name: Oxygen
 .gray-5 { color: #; }
 .gray-5-bg { background-color: #; }
 
+.gray,
 .gray-4 { color: #; }
+.gray-bg,
 .gray-4-bg { background-color: #; }
 
 .gray-3 { color: #;}
