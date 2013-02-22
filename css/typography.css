@@ -122,12 +122,20 @@ a.btn {
 	font-weight: 400;
 }
 
-h3.popover-title {
+.entry-content h3.popover-title {
 	font-size: 14px;
 	padding: 8px 14px;
 	margin: 0;
-	font-weight: normal;
+	font-weight: 700;
 	line-height: 18px;
+}
+
+.entry-content .popover-content {
+	font-size: 10pt;
+}
+
+.tooltip-inner {
+	font-size: 10pt;
 }
 
 .hero-unit {
