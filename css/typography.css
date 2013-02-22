@@ -1,19 +1,18 @@
-/* 
+/*  Font Styles */
 
-Custom typography providided by Google Web Fonts
-
-Currently loaded: SOURCE SANS PRO
-
-Weights available:
-
-	200		200italic
-	300		300italic
-	400		400italic
-	600		600italic
-	700		700italic
-	900		900italic
-
-Source Sans Pro:	*/
+/*
+   Custom typography providided by Google Web Fonts
+   
+   Currently loaded: SOURCE SANS PRO
+   
+   Weights available: 200   200italic
+                      300   300italic
+                      400   400italic
+                      600   600italic
+                      700   700italic
+                      900   900italic
+                                       */
+	
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
 h1,h2,h3,h4,h5,h6,
@@ -23,26 +22,69 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
-/* Custom  Rules */
 
-.navbar .brand {
-	font-weight: 400;
+/* Default Headline sizes */
+
+.entry-content h1 {
+    color: #333;
+    font-size:32pt;
+    font-weight:900;
+    letter-spacing: -1px;
+    line-height: 100%;
+	margin: 12px 0 6px 0;
 }
 
-.entry-content .brand {
-	font-weight: bolder;
+.entry-content h1.huge {
+    font-size: 72pt;
+    letter-spacing:-2px;
+    line-height: 100%;
 }
 
-.entry-content h2 span.brand {
-	font-weight:bolder;
+.entry-content h2 {
+    color:#555;
+    font-size:28pt;
+    font-weight:700;
+    letter-spacing: -0.5px;
+    line-height: 100%;
+	margin: 12px 0 6px 0;
 }
 
-.entry-content h3.popover-title {
-	font-size: 14px;
-	padding: 8px 14px;
-	margin: 0;
-	font-weight: normal;
-	line-height: 18px;
+.entry-content h3 {
+    color:#666;
+    font-size:24pt;
+    font-weight:600;
+    line-height: 100%;
+	margin: 12px 0 6px 0;
+}
+	
+.entry-content h4 {
+    color:#777;
+    font-size:20pt;
+    font-weight: 400;
+    line-height: 100%;
+	margin: 12px 0 6px 0;
+}
+
+.entry-content h5 {
+    color:#888;
+    font-size:18pt;
+    font-weight: 300;
+    line-height: 100%;
+	margin: 12px 0 6px 0;
+}
+
+.entry-content h6 {
+    color:#999;
+    font-size:14pt;
+    font-weight: 200;
+    line-height: 100%;
+	margin: 12px 0 6px 0;
+}
+
+.entry-content h1 small,
+.entry-content h2 small,
+.entry-content h3 small {
+	letter-spacing: -1px;
 }
 
 .entry-header h1.entry-title {
@@ -53,106 +95,68 @@ body {
 	font-style: normal;
 }
 
-.widget-area .widget h3.widget-title  {
-    font-size:18pt;
-    color:#888;
-    margin: 0 0;
-    font-weight:700;
-    text-transform:uppercase;
-    font-style: normal;
-}
-
-.intro {
-	font-size: 14pt;
-	font-weight: 200;
-}
-
-.small {
-	font-size: 10pt;
-}
-
-body {
-	font-size: 12pt;
-	font-weight: 300;
-}
-
-a.btn {
-	font-weight: bolder;
-}
-
-/* Default Headline sizes */
-
-.entry-content h1.huge {
-    font-size: 72pt;
-    letter-spacing:-2px;
-    line-height: 100%;
-    weight:900;
-    font-style: normal;
-}
-
-.entry-content h1 small,
-.entry-content h2 small,
-.entry-content h3 small {
-	letter-spacing: -1px;
-}
-
-
-.entry-content h1 {
-    font-size:32pt;
-    letter-spacing: -1px;
-    line-height: 100%;
-    font-weight:900;
-	margin: 12px 0 6px 0;
-	font-style: normal;
-}
-
-h1.page-title, h1.title {
+h1.page-title, 
+h1.title {
     letter-spacing: 0px;
     font-style: normal;
 }
 
-.entry-content h2 {
-    color:#555;
-    font-size:28pt;
-    letter-spacing: -0.5px;
-    line-height: 100%;
-    font-weight:700;
-	margin: 12px 0 6px 0;
-	font-style: normal;
+/* Text Styles */
+
+body {
+	font-size: 12pt;
+	font-weight: 400;
 }
 
-.entry-content h3 {
-    color:#666;
-    font-size:24pt;
-    line-height: 100%;
-    font-weight:600;
-	margin: 12px 0 6px 0;
-	font-style: normal;
-}
-	
-.entry-content h4 {
-    color:#777;
-    font-size:20pt;
-    line-height: 100%;
-    font-weight: 400;
-	margin: 12px 0 6px 0;
-	font-style: normal;
+.intro {
+	font-size: 14pt;
+	font-weight: 300;
 }
 
-.entry-content h5 {
-    color:#888;
+.small {
+	font-size: 10pt;
+	font-weight:400;
+}
+
+a.btn {
+	font-weight: 400;
+}
+
+h3.popover-title {
+	font-size: 14px;
+	padding: 8px 14px;
+	margin: 0;
+	font-weight: normal;
+	line-height: 18px;
+}
+
+.hero-unit {
+	font-weight: 400;
+}
+
+/* Brand Emphasis Styles */
+
+.navbar .brand {
+	font-weight: 400;
+}
+
+
+.entry-content .brand {
+	font-weight: 600;
+}
+
+.entry-content h1 span.brand,
+.entry-content h2 span.brand,
+.entry-content h3 span.brand {
+	font-weight:900;
+}
+
+/* Override Styles */
+
+.widget-area .widget h3.widget-title  {
     font-size:18pt;
-    line-height: 100%;
-    font-weight: 300;
-	margin: 12px 0 6px 0;
-	font-style: normal;
-}
-
-.entry-content h6 {
-    color:#999;
-    font-size:14pt;
-    line-height: 100%;
-    font-weight: 200;
-	margin: 12px 0 6px 0;
-	font-style: normal;
+    margin: 0;
+    font-weight:700;
+    text-transform:uppercase;
+    font-style: normal;
 }
