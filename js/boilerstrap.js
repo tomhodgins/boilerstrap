@@ -18,10 +18,10 @@ $( document ).ready(function() {
 	$('a[data-toggle=tooltip-down]').tooltip({placement: 'bottom'})
 		
     // Inititialize Bootstrap's popovers
-    $("a[data-toggle=popover]").popover({html: 'true', placement: 'top'}).click(function(e) {e.preventDefault(); });    
-    $("a[data-toggle=popover-left]").popover({html: 'true', placement: 'left'}).click(function(e) {e.preventDefault(); });
-    $("a[data-toggle=popover-right]").popover({html: 'true', placement: 'right'}).click(function(e) {e.preventDefault(); });
-    $("a[data-toggle=popover-down]").popover({html: 'true', placement: 'bottom'}).click(function(e) {e.preventDefault(); });
+    $("a[data-toggle=popover]").popover({html: 'true', placement: 'top'}).click(function(e) {e.preventDefault().addClass("noeffect"); });    
+    $("a[data-toggle=popover-left]").popover({html: 'true', placement: 'left'}).click(function(e) {e.preventDefault().addClass("noeffect"); });
+    $("a[data-toggle=popover-right]").popover({html: 'true', placement: 'right'}).click(function(e) {e.preventDefault().addClass("noeffect"); });
+    $("a[data-toggle=popover-down]").popover({html: 'true', placement: 'bottom'}).click(function(e) {e.preventDefault().addClass("noeffect"); });
     
     // iWebkit support for offline apps on Mobile
     var iWebkit;if(!iWebkit){iWebkit=window.onload=function(){function fullscreen(){var a=document.getElementsByTagName("a");for(var i=0;i<a.length;i++){if(a[i].className.match("noeffect")){}else{a[i].onclick=function(){window.location=this.getAttribute("href");return false}}}}function hideURLbar(){window.scrollTo(0,0.9)}iWebkit.init=function(){fullscreen();hideURLbar()};iWebkit.init()}}
