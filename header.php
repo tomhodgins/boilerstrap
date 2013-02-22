@@ -57,7 +57,6 @@
 		#site-navigation { top: 28px !important; }
 	</style>
 <?php }?>
-
 </head>
 
 <body <?php body_class(); ?>>

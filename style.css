@@ -689,6 +689,10 @@ a:hover {
 	margin-top: 24px;
 	margin-top: 1.714285714rem;
 }
+header.page-header,
+header.page-header h1 {
+	margin-top: 0;
+}
 
 /* Banner */
 section[role="banner"] {
@@ -738,6 +742,10 @@ section[role="banner"] {
 	width: 53.66666666666%; /* define a width to avoid dropping a wider submit button */
 }
 
+#sidebar-mobile {
+	margin-top: 20px;
+}
+
 /* Footer */
 footer[role="contentinfo"] {
 	border-top: 1px solid #ededed;
@@ -773,7 +781,7 @@ footer[role="contentinfo"] a:hover {
 	clear: both;
 }
 .entry-header {
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 }
 .entry-header img.wp-post-image {
 	margin-bottom: 24px;
@@ -794,9 +802,9 @@ footer[role="contentinfo"] a:hover {
 	font-weight: normal;
 }
 .entry-header .comments-link {
-	margin-top: 24px;
-	margin-top: 1.714285714rem;
+	margin: -5px 0 0 7px;
 	font-size: 13px;
+	font-weight: 300;
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 	color: #757575;
@@ -1035,8 +1043,7 @@ img.aligncenter {
 	padding: 6px 10px 6px 0;
 }
 .site-content article {
-/*	padding-bottom: 24px;
-	padding-bottom: 1.714285714rem;*/
+	padding-bottom: 24px;
 	word-wrap: break-word;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
@@ -1047,9 +1054,8 @@ img.aligncenter {
 	line-height: 1.714285714;
 }
 footer.entry-meta {
-	margin-top: 24px;
-	margin-top: 1.714285714rem;
-	font-size: 13px;
+	margin: -5px 0 0 7px;
+	font-weight: 300;
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 	color: #757575;

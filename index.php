@@ -14,7 +14,9 @@
  * @since Boilerstrap 1.0
  */
 
-get_header(); ?>
+get_header();
+get_sidebar( 'mobile' ); ?>
+
 
 	<div id="primary" class="site-content span8">
 		<div id="content" role="main">
