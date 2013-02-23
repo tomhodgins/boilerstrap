@@ -62,12 +62,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
 	line-height: 1;
 }
-.entry-content ol,
-.entry-content ul {
-	list-style: none;
-	padding: 0;
-	margin: 0 0 10px 5px;
-}
 blockquote,
 q {
 	quotes: none;
@@ -220,6 +214,66 @@ img {
 	font-family:"Courier New", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, Courier, monospace;
 	letter-spacing: 0;
 	font-size: 90%;
+}
+
+/* Custom List Bullets */
+.none {
+	list-type:none;
+	list-style-type:none;
+	margin: 0 0 10px 25px;
+}
+
+li.middot:before {
+	content: "•";
+	padding-right: 10px;
+}
+
+li.triangle:before {
+	content:"\f0da";
+	font-family:'FontAwesome';
+	padding-right: 10px;
+}
+
+li.circle-arrow:before {
+	content:"\f0a9";
+	font-family:'FontAwesome';
+	padding-right: 10px;
+}
+
+li.double-angle:before {
+	content:"\f101";
+	font-family:'FontAwesome';
+	padding-right: 10px;
+}
+
+li.angle:before {
+	content:"\f105";
+	font-family:'FontAwesome';
+	padding-right: 10px;
+}
+
+li.circle:before {
+	content:"\f01d";
+	font-family:'FontAwesome';
+	padding-right: 10px;
+}
+
+li.circle-blank:before {
+	content:"\f10c";
+	font-family:'FontAwesome';
+	padding-right: 10px;
+}
+
+li.check:before {
+	content:"\f046";
+	font-family:'FontAwesome';
+	padding-right: 10px;
+}
+
+li.check-empty:before {
+	content:"\f096";
+	font-family:'FontAwesome';
+	padding-right: 10px;
 }
 
 /* Small headers */
@@ -465,6 +519,9 @@ img.wp-smiley,
 	clear: both;
 	line-height: 2;
 	overflow: hidden;
+}
+.nav-tabs {
+	list-style-type: none;
 }
 #nav-above {
 	padding: 24px 0;
@@ -908,18 +965,6 @@ article.sticky .featured-post {
 .entry-content ol ul,
 .comment-content ol ul {
 	margin-bottom: 0;
-}
-.entry-content ul,
-.comment-content ul,
-.mu_register ul {
-	list-style-type:none;
-}
-
-.entry-content ul li:before,
-.comment-content ul li:before,
-.mu_register ul li:before {
-	content: "•";
-	padding-right: 10px;
 }
 .entry-content ol,
 .comment-content ol {
@@ -1500,6 +1545,11 @@ a.comment-edit-link:hover {
 	text-align: right;
 }
 
+.entry-content #searchform input[type="text"] {
+	height: 24px;
+	margin-bottom: 0;
+}
+
 
 /* =Plugins
 ----------------------------------------------- */
@@ -1726,4 +1776,11 @@ img#wpstats {
 		width: 925px !important;
 	}
 
+}
+
+/* Boostrap Overrides */
+
+.modal-body.row-fluid {
+	box-sizing: border-box;
+	padding: 0 15px;
 }

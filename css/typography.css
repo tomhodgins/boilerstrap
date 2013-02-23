@@ -104,6 +104,21 @@ h1.title {
     font-style: normal;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+}
+
+@media (max-width: 480px) {
+
+	.entry-content h1.huge {
+	    font-size: 48pt;
+	    letter-spacing:-1px;
+	    line-height: 100%;
+	}
+}
+
 /* Text Styles */
 
 body {
@@ -139,6 +154,7 @@ a.btn {
 
 .tooltip-inner {
 	font-size: 10pt;
+	letter-spacing: 0.5px;
 }
 
 .hero-unit {
