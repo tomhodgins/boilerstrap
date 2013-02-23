@@ -253,7 +253,7 @@ li.angle:before {
 }
 
 li.circle:before {
-	content:"\f01d";
+	content:"\f111";
 	font-family:'FontAwesome';
 	padding-right: 10px;
 }
