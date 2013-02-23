@@ -252,7 +252,7 @@ ul.check li,
 ul.check-empty li,
 ul.sign-empty li,
 ul.square li {
-	margin:5px 0;
+	margin:5px 0 10px 5px;
 }
 
 ul.middot li:before {
