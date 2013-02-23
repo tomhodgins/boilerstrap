@@ -217,63 +217,218 @@ img {
 }
 
 /* Custom List Bullets */
-.none {
+ul.none,
+li.none {
 	list-type:none;
 	list-style-type:none;
 	margin: 0 0 10px 25px;
 }
 
-li.middot:before {
+ul.middot,
+ul.triangle,
+ul.circle-arrow,
+ul.double-angle,
+ul.angle,
+ul.circle,
+ul.circle-blank,
+ul.check,
+ul.check-empty,
+ul.sign-empty,
+ul.square {
+	list-style: none;
+	list-style-type: none;
+}
+
+ul.none,
+li.none,
+ul.middot li,
+ul.triangle li,
+ul.circle-arrow li,
+ul.double-angle li,
+ul.angle li,
+ul.circle li,
+ul.circle-blank li,
+ul.check li,
+ul.check-empty li,
+ul.sign-empty li,
+ul.square li {
+	margin:5px 0;
+}
+
+ul.middot li:before {
 	content: "•";
+	font-size: 14pt;
 	padding-right: 10px;
+}
+
+ul.triangle li:before {
+	content:"\f0da";
+	font-family:'FontAwesome';
+	font-size: 14pt !important;
+	padding-right: 10px;
+	position: relative;
+	top: 2px;
+}
+
+ul.circle-arrow li:before {
+	content:"\f0a9";
+	font-family:'FontAwesome';
+	font-size: 14pt !important;
+	padding-right: 10px;
+	position: relative;
+	top: 2px;
+}
+
+ul.double-angle li:before {
+	content:"\f101";
+	font-family:'FontAwesome';
+	font-size: 14pt !important;
+	padding-right: 10px;
+	position: relative;
+	top: 2px;
+}
+
+ul.angle li:before {
+	content:"\f105";
+	font-family:'FontAwesome';
+	font-size: 14pt !important;
+	padding-right: 10px;
+	position: relative;
+	top: 2px;
+}
+
+ul.circle li:before {
+	content:"\f111";
+	font-family:'FontAwesome';
+	font-size: 14pt !important;
+	padding-right: 10px;
+	position: relative;
+	top: 2px;
+}
+
+ul.circle-blank li:before {
+	content:"\f10c";
+	font-family:'FontAwesome';
+	font-size: 14pt !important;
+	padding-right: 10px;
+	position: relative;
+	top: 2px;
+}
+
+ul.check li:before {
+	content:"\f046";
+	font-family:'FontAwesome';
+	font-size: 14pt !important;
+	padding-right: 10px;
+	position: relative;
+	top: 2px;
+}
+
+ul.check-empty li:before {
+	content:"\f096";
+	font-family:'FontAwesome';
+	font-size: 14pt !important;
+	padding-right: 10px;
+	position: relative;
+	top: 2px;
+}
+
+ul.sign-empty li:before,
+ul.square li:before {
+	content:"\f0c8";
+	font-family:'FontAwesome';
+	font-size: 14pt !important;
+	padding-right: 10px;
+	position: relative;
+	top: 2px;
+}
+
+li.middot:before {
+	content: "•" !important;
+	font-size: 14pt !important;
+	padding-right: 10px !important;
 }
 
 li.triangle:before {
-	content:"\f0da";
-	font-family:'FontAwesome';
-	padding-right: 10px;
+	content:"\f0da" !important;
+	font-family:'FontAwesome' !important;
+	font-size: 14pt !important;
+	padding-right: 10px !important;
+	position: relative;
+	top: 2px;
 }
 
 li.circle-arrow:before {
-	content:"\f0a9";
-	font-family:'FontAwesome';
-	padding-right: 10px;
+	content:"\f0a9" !important;
+	font-family:'FontAwesome' !important;
+	font-size: 14pt !important;
+	padding-right: 10px !important;
+	position: relative;
+	top: 2px;
 }
 
 li.double-angle:before {
-	content:"\f101";
-	font-family:'FontAwesome';
-	padding-right: 10px;
+	content:"\f101" !important;
+	font-family:'FontAwesome' !important;
+	font-size: 14pt !important;
+	padding-right: 10px !important;
+	position: relative;
+	top: 2px;
 }
 
 li.angle:before {
-	content:"\f105";
-	font-family:'FontAwesome';
-	padding-right: 10px;
+	content:"\f105" !important;
+	font-family:'FontAwesome' !important;
+	font-size: 14pt !important;
+	padding-right: 10px !important;
+	position: relative;
+	top: 2px;
 }
 
 li.circle:before {
-	content:"\f111";
-	font-family:'FontAwesome';
-	padding-right: 10px;
+	content:"\f111" !important;
+	font-family:'FontAwesome' !important;
+	font-size: 14pt !important;
+	padding-right: 10px !important;
+	position: relative;
+	top: 2px;
 }
 
 li.circle-blank:before {
-	content:"\f10c";
-	font-family:'FontAwesome';
-	padding-right: 10px;
+	content:"\f10c" !important;
+	font-family:'FontAwesome' !important;
+	font-size: 14pt !important;
+	padding-right: 10px !important;
+	position: relative;
+	top: 2px;
 }
 
 li.check:before {
-	content:"\f046";
-	font-family:'FontAwesome';
-	padding-right: 10px;
+	content:"\f046" !important;
+	font-family:'FontAwesome' !important;
+	font-size: 14pt !important;
+	padding-right: 10px !important;
+	position: relative;
+	top: 2px;
 }
 
 li.check-empty:before {
-	content:"\f096";
-	font-family:'FontAwesome';
-	padding-right: 10px;
+	content:"\f096" !important;
+	font-family:'FontAwesome' !important;
+	font-size: 14pt !important;
+	padding-right: 10px !important;
+	position: relative;
+	top: 2px;
+}
+
+li.sign-empty:before,
+li.square:before {
+	content:"\f0c8" !important;
+	font-family:'FontAwesome' !important;
+	font-size: 14pt !important;
+	padding-right: 10px !important;
+	position: relative;
+	top: 2px;
 }
 
 /* Small headers */
