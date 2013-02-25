@@ -187,3 +187,11 @@ a.btn {
     text-transform:uppercase;
     font-style: normal;
 }
+
+.label {
+	font-weight: 300;
+}
+
+.badge {
+	font-weight: 300;
+}
