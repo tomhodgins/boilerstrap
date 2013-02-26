@@ -477,8 +477,8 @@ input[type="color"] {
 
 /* Buttons */
 .menu-toggle,
-input[type="submit"],
-input[type="button"],
+/*input[type="submit"],
+input[type="button"],*/
 input[type="reset"],
 article.post-password-required input[type=submit],
 li.bypostauthor cite span {
