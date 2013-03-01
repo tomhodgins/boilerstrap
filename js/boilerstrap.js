@@ -12,10 +12,10 @@ $( document ).ready(function() {
 	// coming soon…
 	
 	// Initialize Bootstrap's tooltips
-	$('a[data-toggle=tooltip]').tooltip()
-	$('a[data-toggle=tooltip-left]').tooltip({placement: 'left'})
-	$('a[data-toggle=tooltip-right]').tooltip({placement: 'right'})
-	$('a[data-toggle=tooltip-down]').tooltip({placement: 'bottom'})
+	$('a[data-toggle=tooltip]').tooltip();
+	$('a[data-toggle=tooltip-left]').tooltip({placement: 'left'});
+	$('a[data-toggle=tooltip-right]').tooltip({placement: 'right'});
+	$('a[data-toggle=tooltip-down]').tooltip({placement: 'bottom'});
 		
     // Inititialize Bootstrap's popovers
     $("a[data-toggle=popover]").popover({html: 'true', placement: 'top'}).click(function(e) {e.preventDefault().addClass("noeffect"); });    

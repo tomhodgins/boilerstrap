@@ -189,9 +189,11 @@ a.btn {
 }
 
 .label {
-	font-weight: 300;
+	font-weight: 400;
+	padding-top: 0;
 }
 
 .badge {
-	font-weight: 300;
+	font-weight: 400;
+	padding-top: 0;
 }

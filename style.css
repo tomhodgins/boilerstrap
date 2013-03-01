@@ -1132,6 +1132,11 @@ article.sticky .featured-post {
 	font-size: 9pt;
 	line-height: 2;
 }
+code {
+white-space: normal;
+word-wrap: break-word;
+word-break: break-all;
+}
 .entry-content pre,
 .comment-content pre {
 	border: 1px solid #ededed;
