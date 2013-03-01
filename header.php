@@ -12,6 +12,7 @@
 <!--[if IE 7]>
 <html class="ie ie7" <?php language_attributes(); ?>>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome-ie7.min.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome-more-ie7.min.css">
 <![endif]-->
 <!--[if IE 8]>
 <html class="ie ie8" <?php language_attributes(); ?>>
@@ -49,6 +50,9 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap-responsive.css" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome-corp.css" type="text/css" media="all" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome-social.css" type="text/css" media="all" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome-ext.css" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/typography.css" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/palette.css" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/custom.css" type="text/css" media="all" />
