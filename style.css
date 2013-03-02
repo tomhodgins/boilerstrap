@@ -1941,3 +1941,6 @@ img#wpstats {
 .modal-body {
 	margin-top: 10px;
 }
+a {
+  outline: none !important;
+}

@@ -25,17 +25,27 @@ get_sidebar( 'mobile' ); ?>
     <h1 class="huge">Bootstrap styles</h1>
     
     <!--Hero Unit -->
-    <h1 class="page-header">hero-unit <small>add class="hero-unit"</small></h1>
-    <section id="bootstrap-hero-unit" class="row-fluid">
-      <div class="hero-unit" style="margin:20px 0;">
-        <h1>I am &lt;div class="hero-unit"&gt;</h1>
-        <h3>I am a support headline</h3>
+    <h1 class="page-header">Hero-unit
+      <a class="btn btn-link btn-large pull-right" data-toggle="collapse" data-target="#toggle-hero-unit">show code</a>
+    </h1>
+      <div id="toggle-hero-unit" class="collapse row-fluid">
+<pre>
+&lt;div class="hero-unit"&gt;
+  &lt;h1&gt;I am a Hero unit&lt;/h1&gt;
+  &lt;h3&gt;I am a secondary headline&lt;/h3&gt;
+&lt;/div&gt;
+</pre>
+      </div>
+    <section id="hero-unit" class="row-fluid">
+      <div class="hero-unit">
+        <h1>I am a Hero unit</h1>
+        <h3>I am a secondary headline</h3>
       </div>
     </section>
     
     <!--Buttons -->
-    <h1 class="page-header">buttons <small>add class="btn"</small></h1>
-    <section id="bootstrap-buttons" class="row-fluid">
+    <h1 class="page-header">Buttons</h1>
+    <section id="buttons">
       <p class="center" style="margin:20px 0;">
         <a href="#" class="btn preventDefault" style="margin:20px 0">a.btn</a>
         <a href="#" class="btn btn-primary" style="margin:20px 0">a.btn-primary</a>
@@ -59,16 +69,25 @@ get_sidebar( 'mobile' ); ?>
     </section>
     
     <!--Wells -->
-    <h1 class="page-header">well <small>add class="well"</small></h1>
-    <section id="bootstrap-well" class="row-fluid">
-      <p class="well well-small center" style="margin:20px 0;">I am a small well</p>
-      <p class="well center" style="margin:20px 0;">I am a well</p>
-      <p class="well well-large center" style="margin:20px 0;">I am a large well</p>
+    <h1 class="page-header">Well
+      <a class="btn btn-link btn-large pull-right" data-toggle="collapse" data-target="#toggle-wells">show code</a>
+    </h1>
+      <div id="toggle-wells" class="collapse row-fluid">
+<pre>
+&lt;p class="well well-small"&gt;I am a small well&lt;/p&gt;
+&lt;p class="well"&gt;I am a well&lt;/p&gt;
+&lt;p class="well well-large"&gt;I am a large well&lt;/p&gt;
+</pre>
+      </div>
+    <section id="well" class="row-fluid">
+      <p class="well well-small">I am a small well</p>
+      <p class="well">I am a well</p>
+      <p class="well well-large">I am a large well</p>
     </section>
     
     <!--Scaffolding -->
-    <h1 class="page-header">scaffolding</h1>
-    <section id="bootstrap-hero-unit" class="row-fluid" style="margin:20px 0;">
+    <h1 class="page-header">Scaffolding</h1>
+    <section id="bootstrap-hero-unit">
       <div class="row-fluid">
         <div class="span6 well center">.span6</div>
         <div class="span6 well center">.span6</div>
@@ -116,8 +135,8 @@ get_sidebar( 'mobile' ); ?>
     </section>
     
     <!-- Tooltip -->
-    <h1 class="page-header">tooltips <small>add data-toggle="tooltip" to a link</small></h1>
-    <section id="bootstrap-tooltip" class="row-fluid">
+    <h1 class="page-header">Tooltips</h1>
+    <section id="tooltip" class="row-fluid">
       <p>Cras sit amet magna nulla. <a href="#" data-toggle="tooltip" title="Etiam in quam lacus">Pellentesque</a> quis urna urna, sit amet egestas elit. Ut ultricies, lacus id gravida scelerisque, nisi leo blandit neque, in auctor nunc urna ac dolor. Nam sodales iaculis diam. Aliquam ligula sem, <a href="#" data-toggle="tooltip" title="urna turpis">dapibus sed sagittis quis</a>, volutpat blandit ipsum. Integer ornare viverra lacinia. Pellentesque ac risus eget mauris laoreet vehicula sit amet eu lectus. Duis ac dapibus nibh. Nam ut tortor id enim congue imperdiet. Praesent a libero massa. <a href="#" data-toggle="tooltip" title="Aliquam nunc turpis, vestibulum at scelerisque sed, facilisis quis magna. Proin quis turpis quis quam lacinia congue condimentum a libero.">Vivamus</a> elementum pulvinar nisi, at rutrum odio faucibus ac. Integer sed magna lectus. Praesent adipiscing porta felis, vel imperdiet magna rhoncus pharetra. Ut ut magna velit, sed fringilla ante. Nullam accumsan elit in mauris aliquam suscipit non eget nisl. Vivamus massa augue, dignissim ut luctus accumsan, eleifend id nunc.</p>
       <div class="row-fluid">
       <div class="span3 center" style="margin:20px 0">
@@ -136,8 +155,8 @@ get_sidebar( 'mobile' ); ?>
     </section>
     
     <!-- Popovers -->
-    <h1 class="page-header">popovers <small>add data-toggle="popover" and data-content="anything" to a link</small></h1>
-    <section id="bootstrap-popover" class="row-fluid">
+    <h1 class="page-header">Popovers</h1>
+    <section id="popover" class="row-fluid">
       <p>Curabitur venenatis neque quis nisl <a href="#" data-toggle="popover" title="Sed ornare dignissim" data-content="Proin ultricies risus id libero dignissim malesuada.">malesuada</a> lobortis. Proin interdum erat eu enim elementum sit amet accumsan augue pharetra. Curabitur blandit dolor ut lacus adipiscing eget fermentum nibh mattis. Quisque enim risus, ultricies quis vulputate sed, fringilla vel erat. Vestibulum ac massa nisl. Ut dignissim varius iaculis. Donec magna lorem, consectetur dictum adipiscing congue, aliquet a lacus. Etiam congue mattis quam, eu molestie massa semper nec. <a href="#" data-toggle="popover" title="Praesent imperdiet" data-content="Etiam congue mattis quam, eu molestie massa semper nec. Quisque tempus, nunc ut aliquam blandit, sem dolor aliquam neque, at vulputate nulla tortor at est.">Quisque</a> tempus, nunc ut aliquam blandit, sem dolor aliquam neque, at vulputate nulla tortor at est. Nam commodo ultricies dui vel ullamcorper. Donec viverra fringilla urna, in molestie enim cursus faucibus. Praesent sit amet erat in erat faucibus euismod at non lorem. Vivamus enim risus, <a href="#" data-toggle="popover" title="Vestibulum ac nunc lorem" data-content="Sed ullamcorper nibh vitae tellus commodo eleifend.">consequat</a> sit amet consequat eget, tristique id ligula. Pellentesque lobortis tincidunt est sed scelerisque.</p>
       <div class="row-fluid">
       <div class="span3 center" style="margin:20px 0">
@@ -213,59 +232,120 @@ get_sidebar( 'mobile' ); ?>
     </section>
     
     <!-- Labels -->
-    <h1 class="page-header">Labels</h1>
-    <section id="labels" style="margin-top:20px;">
+    <h1 class="page-header">Labels
+      <a class="btn btn-link btn-large pull-right" data-toggle="collapse" data-target="#toggle-labels">show code</a>
+    </h1>
+      <div id="toggle-labels" class="collapse row-fluid">
+<pre>
+&lt;span class="label"&gt;Default&lt;/span&gt;
+&lt;span class="label label-success"&gt;Success&lt;/span&gt;
+&lt;span class="label label-warning"&gt;Warning&lt;/span&gt;
+&lt;span class="label label-important"&gt;Important&lt;/span&gt;
+&lt;span class="label label-info"&gt;Info&lt;/span&gt;
+&lt;span class="label label-inverse"&gt;Inverse&lt;/span&gt;
+</pre>
+      </div>
+    <section id="labels">
       <p class="center">
-        <span class="label" style="margin:20px;">Default</span>
-        <span class="label label-success" style="margin:20px;">Success</span>
-        <span class="label label-warning" style="margin:20px;">Warning</span>
-        <span class="label label-important" style="margin:20px;">Important</span>
-        <span class="label label-info" style="margin:20px;">Info</span>
-        <span class="label label-inverse" style="margin:20px;">Inverse</span>
+        <span class="label">Default</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-important">Important</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-inverse">Inverse</span>
       </p>
     </section>
     
     
     <!-- Badges -->
-    <h1 class="page-header">Badges</h1>
-    <section id="badges" style="margin-top:20px;">
+    <h1 class="page-header">Badges
+      <a class="btn btn-link btn-large pull-right" data-toggle="collapse" data-target="#toggle-badges">show code</a>
+    </h1>
+      <div id="toggle-badges" class="collapse row-fluid">
+<pre>
+&lt;span class="badge"&gt;Default&lt;/span&gt;
+&lt;span class="badge badge-success"&gt;Success&lt;/span&gt;
+&lt;span class="badge badge-warning"&gt;Warning&lt;/span&gt;
+&lt;span class="badge badge-important"&gt;Important&lt;/span&gt;
+&lt;span class="badge badge-info"&gt;Info&lt;/span&gt;
+&lt;span class="badge badge-inverse"&gt;Inverse&lt;/span&gt;
+</pre>
+      </div>
+    <section id="badges">
       <p class="center">
-        <span class="badge" style="margin:20px;">Default</span>
-        <span class="badge badge-success" style="margin:20px;">Success</span>
-        <span class="badge badge-warning" style="margin:20px;">Warning</span>
-        <span class="badge badge-important" style="margin:20px;">Important</span>
-        <span class="badge badge-info" style="margin:20px;">Info</span>
-        <span class="badge badge-inverse" style="margin:20px;">Inverse</span>
+        <span class="badge">Default</span>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-warning">Warning</span>
+        <span class="badge badge-important">Important</span>
+        <span class="badge badge-info">Info</span>
+        <span class="badge badge-inverse">Inverse</span>
       </p>
     </section>
     
     <!-- Toggle -->
-    <h1 class="page-header">Toggle</h1>
-    <section id="toggle" style="margin-top:20px;">
-      <p class="center" style="margin:20px auto;">
-        <a class="btn btn-info btn-large noeffect" data-toggle="collapse" data-target="#toggledemo">Toggle Section</a>
+    <h1 class="page-header">Toggle
+      <a class="btn btn-link btn-large pull-right" data-toggle="collapse" data-target="#toggle-code">show code</a>
+    </h1>
+      <div id="toggle-code" class="collapse row-fluid">
+<pre>
+&lt;p class="center"&gt;
+  &lt;a class="btn" data-toggle="collapse" data-target="#toggle-demo"&gt;Toggle Section&lt;/a&gt;
+&lt;/p&gt;
+&lt;div id="toggle-demo" class="collapse"&gt;
+  &lt;div class="hero-unit"&gt;
+    &lt;h1 class="center"&gt;Toggle Demo&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+      </div>
+    <section id="toggle">
+      <p class="center">
+        <a class="btn" data-toggle="collapse" data-target="#toggle-demo">Toggle Section</a>
       </p>
-      <div id="toggledemo" class="collapse in"><div class="hero-unit sea-blue-1-bg">
-        <h1 class="white center" style="text-shadow:#00a7b3 0 3px 15px;">Toggle Demo</h1>
+      <div id="toggle-demo" class="collapse">
+        <div class="hero-unit">
+          <h1 class="center">Toggle Demo</h1>
+        </div>
       </div>
     </section>
     
     <!-- Modal -->
-    <h1 class="page-header">Modal</h1>
-    <section id="modal" style="margin-top:20px;">
+    <h1 class="page-header">Modal
+      <a class="btn btn-link btn-large pull-right" data-toggle="collapse" data-target="#toggle-modal">show code</a>
+    </h1>
+    <div id="toggle-modal" class="collapse row-fluid">
+<pre>
+&lt;p class="center" style="margin:20px auto;"&gt;
+  &lt;a href="#demo-modal" role="button" class="btn" data-toggle="modal"&gt;Launch Modal&lt;/a&gt;
+&lt;/p&gt;
+&lt;div id="demo-modal" class="modal hide fade in" role="content" aria-hidden="true"&gt;
+  &lt;div class="modal-header"&gt;
+    &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;&amp;times;&lt;/button&gt;
+    &lt;h1 class="modal-h1-title"&gt;Demo Modal&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;div class="modal-body search-modal row-fluid"&gt;
+    &lt;p&gt;Oh hello!&lt;/p&gt;				
+  &lt;/div&gt;
+  &lt;div class="modal-footer"&gt;
+    &lt;a href="#" class="btn btn-inverse" data-dismiss="modal" aria-hidden="true" title="Click to dismiss search"&gt;Close&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+    <section id="modal">
       <p class="center" style="margin:20px auto;">
-        <a href="#demo-modal" role="button" class="btn btn-warning btn-large noeffect" data-toggle="modal">Launch Modal</a>
+        <a href="#demo-modal" role="button" class="btn" data-toggle="modal">Launch Modal</a>
       </p>
-      <div id="demo-modal" class="modal hide fade in" tabindex="-1" role="content" aria-labelledby="search-modalLabel" aria-hidden="true">
+      <div id="demo-modal" class="modal hide fade in" role="content" aria-hidden="true">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h1 class="modal-h1-title">Modal Title</h1>
+          <h1 class="modal-h1-title">Demo Modal</h1>
         </div>
         <div class="modal-body search-modal row-fluid">
-          <p>oh hey there!</p>				
+          <p>Oh hello!</p>				
         </div>
         <div class="modal-footer">
-          <a href="#" class="btn btn-inverse noeffect" data-dismiss="modal" aria-hidden="true" title="Click to dismiss search">Close</a>
+          <a href="#" class="btn btn-inverse" data-dismiss="modal" aria-hidden="true" title="Click to dismiss search">Close</a>
         </div>
       </div>
     </section>
@@ -283,6 +363,25 @@ get_sidebar( 'mobile' ); ?>
     responsive visibility classes
     
     -->
+  
+    <!-- CSS Styles -->
+    <style type="text/css">
+
+      section {
+        margin: 20px 0 40px 0;
+      }
+      
+      #well .well {
+        margin: 0 0 20px 0;
+        text-align: center; 
+      }
+      
+      #labels .label,
+      #badges .badge {
+        margin:  20px;
+      }
+    
+    </style>
   
   </div><!-- #content -->
 </div><!-- #primary -->
