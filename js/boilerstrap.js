@@ -20,4 +20,9 @@ $( document ).ready(function() {
   $("a[data-toggle=popover-right]").popover({html: 'true', placement: 'right'}).click(function(e) {e.preventDefault() });
   $("a[data-toggle=popover-down]").popover({html: 'true', placement: 'bottom'}).click(function(e) {e.preventDefault() });
   
+  // preventDefaul class
+  $('.preventDefault').click(function(e) {
+    e.preventDefault()
+  });
+  
 });
