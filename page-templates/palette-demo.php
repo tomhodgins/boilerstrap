@@ -22,7 +22,7 @@ get_sidebar( 'mobile' ); ?>
   <div id="content" class="entry-content" role="main">
   
     <!-- Palette Demos -->
-    <h1 class="page-header">Oxygen Palette <small>from the <span class="brand"><a href="http://www.oxygen-icons.org/" title="Click to visit the Oxygen Project" style="color:#999999;">Oxygen Project</a></span></small></h1>
+    <h1 class="page-header">Oxygen Palette <small class="hidden-phone">from the <span class="brand"><a href="http://www.oxygen-icons.org/" title="Click to visit the Oxygen Project" style="color:#999999;">Oxygen Project</a></span></small></h1>
     <section id="oxygen-palette" style="color:#ffffff;font-weight:700;padding:20px 0;">
     
       <div class="row-fluid">
@@ -298,31 +298,46 @@ get_sidebar( 'mobile' ); ?>
       #oxygen-palette .row-fluid > a {
         text-align: center;
         border-radius: 5px;
-        padding: 16px 20px;
+        padding: 16px inherit;
         margin-top: 20px;
         overflow: visible;
         display:  block;
         color: #fff;
+        font-weight: 300;
         text-shadow: rgba(0,0,0,0.15) 0px 1px 2px;
       }
       
-      #oxygen-palette .row-fluid > .span4 {
+      .row-fluid > a.span1,
+      .row-fluid > a.span6 {
+          box-shadow: inset rgba(0,0,0,0.1) 0px -2px 3px, inset rgba(255,255,255,0.75) 0px 1px 1px, rgba(0,0,0,0.15) 0px 1px 2px;
+      }
+      
+      .row-fluid > a.span1:active,
+      .row-fluid > a.span1:focus,
+      .row-fluid > a.span6:active,
+      .row-fluid > a.span6:focus {
+          box-shadow: inset rgba(0,0,0,0.0) 0px -2px 3px, inset rgba(0,0,0,0.2) 0px 1px 15px, rgba(0,0,0,0.05) 0px 1px 2px;
+          text-decoration: none;
+      }
+      
+      #oxygen-palette .row-fluid .span4,
+      #named-colors .row-fluid .span4 {
         text-align: right;
+        font-weight: 700;
+        font-size: 18pt;
+        line-height: 20px;
       }
       
       #named-colors .row-fluid > a {
         text-align: center;
         border-radius: 5px;
-        padding: 16px 20px;
+        padding: 16px 0;
         margin-top: 20px;
         overflow: visible;
         display: block;
         color: #fff;
+        font-weight: 300;
         text-shadow: rgba(0,0,0,0.15) 0px 1px 2px;
-      }
-      
-      #named-colors .row-fluid .span4 {
-        text-align: right;
       }
       
       div.white {
@@ -348,22 +363,30 @@ get_sidebar( 'mobile' ); ?>
             opacity: 1;
           }
           
-          a[data-toggle="tooltip"] + .tooltip.top .tooltip-arrow {
-            border-top-color: #fff;
-          }
+      a[data-toggle="tooltip"] + .tooltip.top .tooltip-arrow {
+        border-top-color: #fff;
+      }
+      
+      @media (max-width: 500px) {
+      
+        .row-fluid .span4 {
+          text-align: center !important;
+        }
+        
+        
+      
+      }
     
     </style>
     
   <!-- JavaScript Section -->
     <script type="text/javascript">
       $(document).ready(function(){
-        
+      
         $('#oxygen-palette a, #named-colors a').click(function(e) {
-          e.preventDefault()
-          .tooltip(toggle)
+          e.preventDefault();
         });
-          
-   
+                                   
       });
     </script>
   
