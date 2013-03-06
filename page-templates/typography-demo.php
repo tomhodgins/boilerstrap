@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Typography Styles
+ * Template Name: Demo - Typography Styles
  *
  * Description: This template demos the custom font integration with 
  * Source Sans Pro and the various heading and text styles that we have

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Bootstrap Demos
+ * Template Name: Demo - Bootstrap Demos
  *
  * Description: This page contains a select number of copy/pastable
  * demos using Bootstrap's built-in styles. Everything you see here

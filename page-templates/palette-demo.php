@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Palette Demos
+ * Template Name: Demo - Color Palette
  *
  * Description: This page template contains the Oxygen color palette
  * as well as a list of named colors for branding that can be applied
