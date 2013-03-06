@@ -730,6 +730,12 @@ img.wp-smiley,
 padding: 3px 20px 3px 10px;
 }
 
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  color: #ffffff !important;
+}
 .navbar .btn,
 .navbar .btn-group {
 	margin-top: 2px !important;
