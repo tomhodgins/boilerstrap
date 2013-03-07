@@ -6,12 +6,13 @@ Description: Used to style the TinyMCE editor.
 @import url('css/typography.css');
 @import url('css/bootstrap.css');
 @import url('css/palette.css');
+@import url('css/font-awesome.min.css');
 
 html {
 	font-size: 87.5%;
 }
 html .mceContentBody {
-	max-width: 625px;
+	max-width: 960px;
 }
 body {
 	color: #444;
