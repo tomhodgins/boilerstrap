@@ -3,6 +3,10 @@ Theme Name: Boilerstrap
 Description: Used to style the TinyMCE editor.
 */
 
+@import url('css/typography.css');
+@import url('css/bootstrap.css');
+@import url('css/palette.css');
+
 html {
 	font-size: 87.5%;
 }
@@ -15,6 +19,7 @@ body {
 	font-size: 14px;
 	font-size: 1rem;
 	line-height: 1;
+	padding: 15px;
 	text-rendering: optimizeLegibility;
 	vertical-align: baseline;
 }
@@ -23,7 +28,7 @@ body {
 /* =Headings
 -------------------------------------------------------------- */
 
-h1,
+/*h1,
 h2,
 h3,
 h4,
@@ -59,7 +64,7 @@ h5 {
 h6 {
 	font-size: 12px;
 	font-size: 0.857142857rem;
-}
+}*/
 hr {
 	background-color: #ccc;
 	border: 0;
