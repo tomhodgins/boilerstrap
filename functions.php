@@ -585,3 +585,15 @@ function boilerstrap_customize_preview_js() {
 	wp_enqueue_script( 'boilerstrap-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20120827', true );
 }
 add_action( 'customize_preview_init', 'boilerstrap_customize_preview_js' );
+
+
+/**
+ * Add the ability to use the temaplate file structure for single-{category-slug}.php
+ */
+add_filter('single_template', create_function(
+	'$the_template',
+	'foreach( (array) get_the_category() as $cat ) {
+		if ( file_exists(TEMPLATEPATH . "/single-{$cat->slug}.php") )
+		return TEMPLATEPATH . "/single-{$cat->slug}.php"; }
+	return $the_template;' )
+);
