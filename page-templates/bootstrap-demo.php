@@ -471,6 +471,19 @@ get_sidebar( 'mobile' ); ?>
         </div>
       </div>
     </section>
+
+    <!--Hero Unit -->
+    <h1 class="page-header">Disabled
+      <a class="btn btn-link btn-large pull-right" data-toggle="collapse" data-target="#toggle-disabled">show code</a>
+    </h1>
+      <div id="toggle-disabled" class="collapse row-fluid">
+<pre>
+&lt;a href="#" class="btn disabled"&gt;button&lt;/a&gt;
+</pre>
+      </div>
+    <section id="disabled" class="row-fluid">
+      <p><a href="#" class="btn disabled">button</a></p>
+    </section>
     
     <!-- yet to add
     
@@ -496,7 +509,8 @@ get_sidebar( 'mobile' ); ?>
       #button .btn,
       #button p,
       #tooltip .span3,
-      #popover .span3 {
+      #popover .span3,
+      #disabled p {
         margin:  20px 0;
         text-align: center;
       }
