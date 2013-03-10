@@ -2111,3 +2111,10 @@ body.author .author-profiles li i {
 a {
   outline: none !important;
 }
+
+/* Fix for FontAwesome More line-height */
+
+.icon-blogger-sign::before, .icon-blogger::before, .icon-delicious::before, .icon-dribbble-sign::before, .icon-dribbble::before, .icon-dropbox::before, .icon-drupal::before, .icon-evernote-sign::before, .icon-evernote::before, .icon-flickr-sign::before, .icon-flickr::before, .icon-forrst-sign::before, .icon-forrst::before, .icon-foursquare-sign::before, .icon-foursquare::before, .icon-git-fork::before, .icon-hacker-news::before, .icon-instagram::before, .icon-lastfm-sign::before, .icon-lastfm::before, .icon-paypal::before, .icon-picasa-sign::before, .icon-picasa::before, .icon-reddit::before, .icon-share-this-sign::before, .icon-share-this::before, .icon-skype::before, .icon-soundcloud::before, .icon-spotify::before, .icon-stack-overflow::before, .icon-tumblr-sign::before, .icon-tumblr::before, .icon-vimeo-sign::before, .icon-vimeo::before, .icon-wordpress-sign::before, .icon-wordpress::before, .icon-yelp-sign::before, .icon-yelp::before, .icon-youtube-sign::before, .icon-youtube::before {
+font-family: 'Font-Awesome-Social';
+  line-height: 65% !important;
+}

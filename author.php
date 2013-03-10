@@ -45,8 +45,8 @@ get_header(); ?>
       
         <div class="row-fluid">
         
-          <div class="author-avatar span4 center">
-            <?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'boilerstrap_author_bio_avatar_size', 500 ) ); ?>
+          <div class="author-avatar span3 center">
+            <?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'boilerstrap_author_bio_avatar_size', 250 ) ); ?>
             <div class="row-fluid">
               <div class="author-actions">
               
@@ -59,7 +59,7 @@ get_header(); ?>
     
           </div><!-- .author-avatar -->
           
-          <div class="author-details span8">
+          <div class="author-details span9">
           
           <?php get_currentuserinfo();
           
@@ -73,7 +73,8 @@ get_header(); ?>
               <h1 class="author-title"><?php the_author_meta('display_name') ?></h1>
               <h2 class="author-jobtitle"><?php   the_author_meta( 'jobtitle', $post->post_author ) ?></h2>
               <h2 class="author-location"><?php   the_author_meta( 'location', $post->post_author ) ?></h2>
-              <div class="author-userstatus"><?php   the_author_meta( 'userstatus', $post->post_author ) ?></div>
+              
+              <div class="author-userstatus"><?php the_author_meta( 'userstatus', $post->post_author ) ?></div>
           
               <ul class="author-profiles">
                 <li><a href="http://twitter.com/<?php the_author_meta('twitter', $post->post_author ) ?>" class="twitter"><i class="icon-twitter"></i> @<?php the_author_meta('twitter', $post->post_author ) ?></a></li>
