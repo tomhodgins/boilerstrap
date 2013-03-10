@@ -849,3 +849,15 @@ add_filter('user_contactmethods','boilerstrap_remove_contactmethods',10,1);
  </div><!-- .author-info -->
  
 */
+
+/**
+ * Custom Admin CSS
+ */
+ function boilerstrap_customAdmin() {
+     $url = get_settings('siteurl');
+     $url = $url . '/wp-content/themes/boilerstrap/css/admin-styles.css';
+     echo '<!-- custom admin css -->
+           <link rel="stylesheet" type="text/css" href="' . $url . '" />
+           <!-- /end custom adming css -->';
+ }
+ add_action('admin_head', 'boilerstrap_customAdmin');
