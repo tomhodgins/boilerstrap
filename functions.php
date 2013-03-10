@@ -586,7 +586,6 @@ function boilerstrap_customize_preview_js() {
 }
 add_action( 'customize_preview_init', 'boilerstrap_customize_preview_js' );
 
-
 /**
  * Add the ability to use the temaplate file structure for single-{category-slug}.php
  */
@@ -597,3 +596,256 @@ add_filter('single_template', create_function(
 		return TEMPLATEPATH . "/single-{$cat->slug}.php"; }
 	return $the_template;' )
 );
+
+/**
+ * Replaces the image that shows up on the WordPress admin login page
+ */
+  add_filter( 'login_headerurl', 'boilerstrap_login_headerurl' );
+  /**
+  * Replaces the login header logo URL
+  *
+  * @param $url
+  */
+  function boilerstrap_login_headerurl( $url ) {
+     $url = home_url( '/' );
+     return $url;
+  }
+  
+  add_filter( 'login_headertitle', 'boilerstrap_login_headertitle' );
+  /**
+  * Replaces the login header logo title
+  *
+  * @param $title
+  */
+  function boilerstrap_login_headertitle( $title ) {
+     $title = get_bloginfo( 'name' );
+     return $title;
+  }
+  
+  add_action( 'login_head', 'boilerstrap_login_style' );
+  /**
+  * Replaces the login header logo
+  */
+  function boilerstrap_login_style() {
+     echo '<style>'.PHP_EOL;
+     echo '  .login h1 a {'.PHP_EOL;
+     echo '    background-image: url( ' . get_template_directory_uri() . '/img/logo.png ) !important;'.PHP_EOL;
+     echo '  }'.PHP_EOL;
+     echo '</style>'.PHP_EOL;
+  }
+  
+/**
+ * Add Custom Backend Favicon
+ *
+function boilerstrap_admin_favicon() {
+	echo '<link rel="Shortcut Icon" type="image/x-icon" href="'.get_bloginfo('stylesheet_directory').'/img/ico/favicon-admin.png" />';
+}
+add_action('admin_head', 'boilerstrap_admin_favicon');
+
+*/
+ 
+/**
+ * Only users that can update plugins see WordPress update notices
+ */        
+ 
+global $user_login;
+get_currentuserinfo();
+if (!current_user_can('update_plugins')) { // checks to see if current user can update plugins 
+ add_action( 'init', create_function( '$a', "remove_action( 'init', 'wp_version_check' );" ), 2 );
+ add_filter( 'pre_option_update_core', create_function( '$a', "return null;" ) );
+}
+
+/**
+ * Sharpen resized JPG's so they don't get blurry
+ */
+ 
+function boilerstrap_sharpen_resized_files( $resized_file ) {
+
+   $image = wp_load_image( $resized_file );
+   if ( !is_resource( $image ) )
+       return new WP_Error( 'error_loading_image', $image, $file );
+
+   $size = @getimagesize( $resized_file );
+   if ( !$size )
+       return new WP_Error('invalid_image', __('Could not read image size'), $file);
+   list($orig_w, $orig_h, $orig_type) = $size;
+
+   switch ( $orig_type ) {
+       case IMAGETYPE_JPEG:
+           $matrix = array(
+               array(-1, -1, -1),
+               array(-1, 16, -1),
+               array(-1, -1, -1),
+           );
+
+           $divisor = array_sum(array_map('array_sum', $matrix));
+           $offset = 0; 
+           imageconvolution($image, $matrix, $divisor, $offset);
+           imagejpeg($image, $resized_file,apply_filters( 'jpeg_quality', 90, 'edit_image' ));
+           break;
+       case IMAGETYPE_PNG:
+           return $resized_file;
+       case IMAGETYPE_GIF:
+           return $resized_file;
+   }
+
+   return $resized_file;
+}   
+
+add_filter('image_make_intermediate_size', 'boilerstrap_sharpen_resized_files',900);
+
+/**
+ * Removes WordPress version number from <head>
+ */
+remove_action('wp_head', 'wp_generator');
+
+
+/**
+ * Custom User Profile Fields
+ */
+ 
+add_action( 'show_user_profile', 'boilerstrap_show_extra_profile_fields' );
+add_action( 'edit_user_profile', 'boilerstrap_show_extra_profile_fields' );
+
+function boilerstrap_show_extra_profile_fields( $user ) { ?>
+
+	<h3>Additional information</h3>
+
+	<table class="form-table">
+
+		<tr>
+			<th><label for="userstatus">Status Message</label></th>
+
+			<td>
+				<input type="text" name="userstatus" id="userstatus" value="<?php echo esc_attr( get_the_author_meta( 'userstatus', $user->ID ) ); ?>" class="regular-text" /><br />
+				<span class="description">Add a status message</span>
+			</td>
+		</tr>
+
+		<tr>
+			<th><label for="jobtitle">Job Title</label></th>
+
+			<td>
+				<input type="text" name="jobtitle" id="jobtitle" value="<?php echo esc_attr( get_the_author_meta( 'jobtitle', $user->ID ) ); ?>" class="regular-text" /><br />
+				<span class="description">Add your job title</span>
+			</td>
+		</tr>
+		
+    <tr>
+    	<th><label for="location">Location</label></th>
+    
+    	<td>
+    		<input type="text" name="location" id="location" value="<?php echo esc_attr( get_the_author_meta( 'location', $user->ID ) ); ?>" class="regular-text" /><br />
+    		<span class="description">Enter your location</span>
+    	</td>
+    </tr>
+    
+    <tr>
+    	<th><label for="twitter">Twitter Username</label></th>
+    
+    	<td>
+    		<input type="text" name="twitter" id="twitter" value="<?php echo esc_attr( get_the_author_meta( 'twitter', $user->ID ) ); ?>" class="regular-text" /><br />
+    		<span class="description">Enter your twitter username, i.e. <span style="color: #999;">http://twitter.com/<span><span style="color: #37a42c; margin-left: 2px;">username</span></span>
+    	</td>
+    </tr>
+    
+    <tr>
+    	<th><label for="facebook">Facebook Account</label></th>
+    
+    	<td>
+    		<input type="text" name="facebook" id="facebook" value="<?php echo esc_attr( get_the_author_meta( 'facebook', $user->ID ) ); ?>" class="regular-text" /><br />
+    		<span class="description">Enter the link to your Facebook profile, i.e. <span style="color: #37a42c;">http://facebook.com/username</span></span>
+    	</td>
+    </tr>
+    
+    <tr>
+    	<th><label for="googleplus">Google+</label></th>
+    
+    	<td>
+    		<input type="text" name="googleplus" id="googleplus" value="<?php echo esc_attr( get_the_author_meta( 'googleplus', $user->ID ) ); ?>" class="regular-text" /><br />
+    		<span class="description">Enter the link to your Google+ profile, i.e. <span style="color: #37a42c;">https://plus.google.com/u/0/115446181846707482550</span></span>
+    	</td>
+    </tr>
+    
+    <tr>
+    	<th><label for="skype">Skype Username</label></th>
+    
+    	<td>
+    		<input type="text" name="skype" id="skype" value="<?php echo esc_attr( get_the_author_meta( 'skype', $user->ID ) ); ?>" class="regular-text" /><br />
+    		<span class="description">Enter your Skype username</span>
+    	</td>
+    </tr>
+    
+    <tr>
+    	<th><label for="linkedin">LinkedIN Profile</label></th>
+    
+    	<td>
+    		<input type="text" name="linkedin" id="linkedin" value="<?php echo esc_attr( get_the_author_meta( 'linkedin', $user->ID ) ); ?>" class="regular-text" /><br />
+    		<span class="description">Enter the link to your LinkedIN profile, i.e. <span style="color: #37a42c;">http://www.linkedin.com/in/tomhodgins</span></span>
+    	</td>
+    </tr>
+    
+    <tr>
+    	<th><label for="youtube">YouTube Channel</label></th>
+    
+    	<td>
+    		<input type="text" name="youtube" id="youtube" value="<?php echo esc_attr( get_the_author_meta( 'youtube', $user->ID ) ); ?>" class="regular-text" /><br />
+    		<span class="description">Enter the link to your YouTube channel, i.e. <span style="color:  #37a42c;">http://www.youtube.com/user/howtobasic</span></span>
+    	</td>
+    </tr>
+
+	</table>
+<?php }
+
+add_action( 'personal_options_update', 'boilerstrap_save_extra_profile_fields' );
+add_action( 'edit_user_profile_update', 'boilerstrap_save_extra_profile_fields' );
+
+function boilerstrap_save_extra_profile_fields( $user_id ) {
+
+	if ( !current_user_can( 'edit_user', $user_id ) )
+		return false;
+
+	/* Copy and paste this line for additional fields. Make sure to change 'twitter' to the field ID. */
+	update_usermeta( $user_id, 'userstatus', $_POST['userstatus'] );
+	update_usermeta( $user_id, 'jobtitle', $_POST['jobtitle'] );
+	update_usermeta( $user_id, 'location', $_POST['location'] );
+  update_usermeta( $user_id, 'twitter', $_POST['twitter'] );
+  update_usermeta( $user_id, 'facebook', $_POST['facebook'] );
+  update_usermeta( $user_id, 'googleplus', $_POST['googleplus'] );
+  update_usermeta( $user_id, 'skype', $_POST['skype'] );
+  update_usermeta( $user_id, 'linkedin', $_POST['linkedin'] );
+  update_usermeta( $user_id, 'youtube', $_POST['youtube'] );
+	
+}
+
+// Remove Contact Methods
+function boilerstrap_remove_contactmethods( $contactmethods ) {
+  
+	unset($contactmethods['aim']);
+	unset($contactmethods['yim']);
+	unset($contactmethods['jabber']);
+
+	return $contactmethods;
+}
+add_filter('user_contactmethods','boilerstrap_remove_contactmethods',10,1);
+
+/**
+ * Adds current author widget only on single pages
+ *
+ 
+ <div class="author-info">
+ 	<div class="author-avatar">
+ 		<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'boilerstrap_author_bio_avatar_size', 68 ) ); ?>
+ 	</div><!-- .author-avatar -->
+ 	<div class="author-description">
+ 		<h2><?php printf( __( 'About %s', 'boilerstrap' ), get_the_author() ); ?></h2>
+ 		<p><?php the_author_meta( 'description' ); ?></p>
+ 		<div class="author-link">
+ 			<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
+ 				<?php printf( __( 'View all posts by %s <span class="meta-nav">&rarr;</span>', 'boilerstrap' ), get_the_author() ); ?>
+ 			</a>
+ 		</div><!-- .author-link	-->
+ 	</div><!-- .author-description -->
+ </div><!-- .author-info -->
+ 
+*/

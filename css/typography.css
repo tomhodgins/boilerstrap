@@ -20,15 +20,16 @@ h1,h2,h3,h4,h5,h6,
 body {
   font-family: "Source Sans Pro", sans-serif;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
-
 
 /* Default Headline sizes */
 
 h1.page-title, 
 h1.title,
 h1.archive-title,
-.entry-content h1 {
+.entry-content h1,
+h1.author-title {
   color: #333;
   font-size: 32pt;
   font-weight: 900;

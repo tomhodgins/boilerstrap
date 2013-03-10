@@ -239,7 +239,12 @@ get_sidebar( 'mobile' ); ?>
     
     <h1 class="page-header">Named Colors</h1>
     <section id="named-colors" style="color:#ffffff;font-weight:700;padding:20px 0;">
-    
+      
+      <div class="row-fluid">
+        <a href="#" class="span4 skype-blue">skype-blue</a>
+        <a href="#" class="span6 skype-blue-bg" data-toggle="tooltip" data-trigger="click" title="#2caae1">skype-blue-bg</a>
+      </div>
+      
       <div class="row-fluid">
         <a href="#" class="span4 twitter-blue">twitter-blue</a>
         <a href="#" class="span6 twitter-blue-bg" data-toggle="tooltip" data-trigger="click" title="#2caae1">twitter-blue-bg</a>
