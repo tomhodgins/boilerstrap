@@ -447,6 +447,9 @@ textarea {
 	font-family: inherit;
 	padding: 6px;
 	padding: 0.428571429rem;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+	}
 }
 button,
 input {
