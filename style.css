@@ -1586,6 +1586,7 @@ a.comment-edit-link:hover {
 }
 #respond form input[type="text"],
 #respond form textarea {
+  -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	font-size: 12px;
@@ -1854,7 +1855,9 @@ body.author .author-actions a{
   float: left;
   width: 48%;
   margin-top: 15px;
-  box-sizing:  border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body.author .author-actions a:first-child {
@@ -1933,6 +1936,8 @@ body.author .author-profiles li {
   width: 50%;
   margin: 0;
   padding: 15px 0 15px 80px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-align: left;  
 }
@@ -2094,7 +2099,9 @@ body.author .author-profiles li i {
 /* Boostrap Overrides */
 
 .modal-body.row-fluid {
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 	padding: 0 15px;
 }
 .btn, .label, .badge {

@@ -798,7 +798,9 @@ get_sidebar( 'mobile' ); ?>
         	max-height: none;
         	height:100%;
         	padding: 0px 15px 170px 15px;
-        	box-sizing:border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
         	overflow-y: scroll;
         	position:;
         	top:0;
