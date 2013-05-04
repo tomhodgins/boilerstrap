@@ -484,7 +484,87 @@ get_sidebar( 'mobile' ); ?>
     <section id="disabled" class="row-fluid">
       <p><a href="#" class="btn disabled">button</a></p>
     </section>
+     
+    <!--Progress Bars -->
+    <h1 class="page-header">Progress Bars
+      <a class="btn btn-link btn-large pull-right" data-toggle="collapse" data-target="#toggle-progressbars">show code</a>
+    </h1>
+      <div id="toggle-progressbars" class="collapse row-fluid">
+<pre>
+&lt;div class="progress"&gt;
+  &lt;div class="bar" style="width: 25%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="progress progress-striped"&gt;
+  &lt;div class="bar" style="width: 50%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="progress progress-striped active"&gt;
+  &lt;div class="bar" style="width: 75%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="progress"&gt;
+  &lt;div class="bar bar-success" style="width: 30%;"&gt;&lt;/div&gt;
+  &lt;div class="bar bar-warning" style="width: 25%;"&gt;&lt;/div&gt;
+  &lt;div class="bar bar-danger" style="width: 10%;"&gt;&lt;/div&gt;
+  &lt;div class="bar bar-info" style="width: 15%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="progress progress-info"&gt;
+  &lt;div class="bar" style="width: 35%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="progress progress-success"&gt;
+  &lt;div class="bar" style="width: 70%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="progress progress-warning"&gt;
+  &lt;div class="bar" style="width: 95%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="progress progress-danger"&gt;
+  &lt;div class="bar" style="width: 80%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+      </div>
+    <section id="progress-bar" class="row-fluid">
+    <div class="progress">
+      <div class="bar" style="width: 25%;"></div>
+    </div>
     
+    <div class="progress progress-striped">
+      <div class="bar" style="width: 50%;"></div>
+    </div>
+    
+    <div class="progress progress-striped active">
+      <div class="bar" style="width: 75%;"></div>
+    </div>
+    
+    <div class="progress">
+      <div class="bar bar-success" style="width: 30%;"></div>
+      <div class="bar bar-warning" style="width: 25%;"></div>
+      <div class="bar bar-danger" style="width: 10%;"></div>
+      <div class="bar bar-info" style="width: 15%;"></div>
+    </div>
+    
+    <div class="progress progress-info">
+      <div class="bar" style="width: 35%"></div>
+    </div>
+    
+    <div class="progress progress-success">
+      <div class="bar" style="width: 70%"></div>
+    </div>
+    
+    <div class="progress progress-warning">
+      <div class="bar" style="width: 95%"></div>
+    </div>
+    
+    <div class="progress progress-danger">
+      <div class="bar" style="width: 80%"></div>
+    </div>
+    </section>
+    
+
     <!-- yet to add
     
     disabled
