@@ -566,13 +566,9 @@ get_sidebar( 'mobile' ); ?>
     
 
     <!-- yet to add
-    
-    disabled
-    
+        
     carousel
-    
-    progress bars
-    
+        
     accordions
     
     responsive visibility classes

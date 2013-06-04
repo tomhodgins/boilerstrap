@@ -24,7 +24,7 @@ get_sidebar( 'mobile' ); ?>
     <!-- Palette Demos -->
     <h1 class="page-header">Oxygen Palette <small class="hidden-phone">from the <span class="brand"><a href="http://www.oxygen-icons.org/" title="Click to visit the Oxygen Project" style="color:#999999;">Oxygen Project</a></span></small></h1>
     <section id="oxygen-palette" style="color:#ffffff;font-weight:700;padding:20px 0;">
-    
+        
       <div class="row-fluid">
         <a href="#" class="span4 wood-brown">Wood Brown</a>
         <a href="#" class="span1 wood-brown-1-bg" data-toggle="tooltip" data-trigger="click" title="#debc85">1</a>        
@@ -32,8 +32,10 @@ get_sidebar( 'mobile' ); ?>
         <a href="#" class="span1 wood-brown-3-bg" data-toggle="tooltip" data-trigger="click" title="#8f6b32">3</a>
         <a href="#" class="span1 wood-brown-4-bg" data-toggle="tooltip" data-trigger="click" title="#75511a">4</a>
         <a href="#" class="span1 wood-brown-5-bg" data-toggle="tooltip" data-trigger="click" title="#57401e">5</a>
-        <a href="#" class="span1 wood-brown-6-bg" data-toggle="tooltip" data-trigger="click" title="#382509">6</a>
+        <a href="#" id="example" class="span1 wood-brown-6-bg" data-toggle="tooltip" data-trigger="click" title="#382509">6</a>
       </div>
+      
+       <div class="instruction"></div>
       
       <div class="row-fluid">
         <a href="#" class="span4 brick-red">Brick Red</a>
@@ -300,6 +302,21 @@ get_sidebar( 'mobile' ); ?>
         margin: 20px 0 40px 0;
       }
       
+      #content {
+        position: relative;
+      }
+      
+      .instruction {
+        display: block;
+        width: 183px;
+        height:  157px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url('<?php echo get_template_directory_uri(); ?>/img/example-palette.png');
+        background-repeat: no-repeat;
+      }
+
       #oxygen-palette .row-fluid > a {
         text-align: center;
         border-radius: 5px;
@@ -378,7 +395,13 @@ get_sidebar( 'mobile' ); ?>
           text-align: center !important;
         }
         
-        
+      }
+      
+      @media (max-width: 767px) {
+      
+        .instruction {
+          display: none !important;
+        }
       
       }
     
@@ -391,6 +414,13 @@ get_sidebar( 'mobile' ); ?>
         $('#oxygen-palette a, #named-colors a').click(function(e) {
           e.preventDefault();
         });
+        
+        if ($(window).width() > 767) {
+        	$('#example').tooltip('show');
+        };
+               
+        setTimeout(function() { $(".instruction").fadeOut("slow"); }, 4000);
+        setTimeout(function() { $("#example").tooltip('hide') }, 4500);
                                    
       });
     </script>
